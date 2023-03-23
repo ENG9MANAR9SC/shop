@@ -14,7 +14,6 @@
                     </div>
                     <div class="flex my-3">
                         <img src="./icons/email.png" alt="">
-
                         <a href="" class="px-3">Email@email.com</a> 
                     </div>
                     <div class="flex my-3">

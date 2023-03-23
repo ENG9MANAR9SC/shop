@@ -1,77 +1,79 @@
 <template>
-    <Menu as="div" class="relative inline-block text-left">
-      <div>
-        <MenuButton class="inline-flex w-full justify-center rounded-md px-1 py-1 text-tiny font-medium text-muted-text hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-100">
-          <div class="flex gap-1">
-            <span class="">
-              lang
-            </span>
-           
-          </div>
-  
-          <ChevronDownIcon class="h-4 w-4" aria-hidden="true" />
-        </MenuButton>
-      </div>
-  
-      <transition
-        enter-active-class="transition ease-out duration-100"
-        enter-from-class="transform opacity-0 scale-95"
-        enter-to-class="transform opacity-100 scale-100"
-        leave-active-class="transition ease-in duration-75"
-        leave-from-class="transform opacity-100 scale-100"
-        leave-to-class="transform opacity-0 scale-95"
+  <div class="relative">
+    <button
+      class="flex items-center space-x-2 px-4 py-2 rounded-md bg-white text-secondery hover:bg-primaryblue focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
+      @click="isOpen = !isOpen"
+    >
+      <img :src="languageIcons[activeLanguage].icon" :alt="languageIcons[activeLanguage].name" class="h-5 w-5" />
+      <span>{{ languageIcons[activeLanguage].name }}</span>
+      <svg
+        class="h-5 w-5"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+        :class="[isOpen ? '-rotate-180' : '']"
       >
-        <MenuItems class="absolute z-10 mt-2 w-56 origin-top-right rounded-md bg-light shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
-          <div class="py-1">
-            <MenuItem role="button" v-for="lang in langs" :key="lang.code">
-              <a @click.prevent="changeLang(lang.code)" class=" bg-secondery text-primary font-bold text-dark block px-4 py-2 text-tiny">
-                {{lang.title}}
-              </a>
-            </MenuItem>
-          </div>
-        </MenuItems>
-      </transition>
-    </Menu>
-  </template>
-  
-  <script setup>
-  import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/vue'
- 
-  
-  </script>
-  <script>
-  export default {
+        <path
+          fill-rule="evenodd"
+          d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+          clip-rule="evenodd"
+        />
+      </svg>
+    </button>
+
+    <div
+      class="absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 divide-y divide-gray-100"
+      :class="[isOpen ? 'block' : 'hidden']"
+    >
+      <template v-for="language in languages">
+        <button
+          class="flex items-center justify-between w-full px-4 py-2 text-sm text-secondery hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:bg-gray-100 focus:text-gray-900"
+          :class="{ 'font-medium': activeLanguage === language }"
+          @click="selectLanguage(language)"
+        >
+          <img :src="languageIcons[language].icon" :alt="languageIcons[language].name" class="h-5 w-5" />
+          <span class="mx-2">{{ languageIcons[language].name }}</span>
+          <svg class="h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
+            <path
+              fill-rule="evenodd"
+              d="M6.293 6.707a1 1 0 010-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 11-1.414 1.414L11 4.414V16a1 1 0 11-2 0V4.414L7.707 6.121a1 1 0 01-1.414 0z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </button>
+      </template>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
     data() {
       return {
-        langs:{
+        isOpen: false,
+        activeLanguage: 'en',
+        languages: ['en', 'ar', 'ku'],
+        languageIcons: {
           en: {
-            code: 'en',
-            title: 'English',
-        /*     flag: '/imgs/icons/american-flag.svg', */
+            name: 'English',
+            icon: 'https://cdn-icons-png.flaticon.com/512/197/197386.png'
           },
           ar: {
-            code: 'ar',
-            title: 'العربية',
-          /*   flag: '/imgs/icons/iraq-flag.svg', */
-          },
-
-        }
-      }
-    },
-  
-/*     beforeMount() {
-      let lang = localStorage.getItem("lang");
-      if(lang) {
-        this.$i18n.locale = lang;
-      }
-    },
-  
-    methods: {
-      changeLang(lang) {
-        localStorage.setItem("lang", lang);
-        this.$i18n.locale = lang;
-        this.$router.go();
+        name: 'Arabic',
+        icon: 'https://cdn-icons-png.flaticon.com/512/197/197615.png'
       },
-    } */
-  }
-  </script>
+      ku: {
+        name: 'Kurdish',
+        icon: 'https://cdn-icons-png.flaticon.com/512/197/197586.png'
+      }
+    }
+  };
+  },
+  methods: {
+      selectLanguage(language) {
+      this.activeLanguage = language;
+      this.isOpen = false;
+      // Add logic here to change the language of your app
+      }
+    }
+  };
+</script>
