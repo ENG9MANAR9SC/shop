@@ -5,19 +5,22 @@
                 <div class="c-container flex justify-between text-white">
                     <div class="flex">
                         <img src="./icons/call.png" alt="" class="h-6 w-6 mx-1 mt-1">
-                        +964 847 857</div>
+                        +964 847 857
+                    </div>
+
                     <div>
                         <dropdown class="sm:block hidden"></dropdown>
-                       </div>
+                    </div>
                 </div>
             </div>
+
             <div class="h-24 bg-bglight">
                 <div class="c-container flex justify-between items-center">
                     <div class="">
                         <img src="./icons/unsplash_gTV2osuOsJc.png" alt="" width="62px" height="62px">
                     </div>
                         <!-- list -->
-                    <div class="flex justify-center text-large font-philo font-bold text-secondery ">
+                    <div class="flex flex-wrap justify-center text-large font-philo font-bold text-secondery ">
                         <a href="" class="mx-2">Home</a>
                         <a href="" class="mx-2">Shop</a>
                         <a href="" class="mx-2">Categories</a>
