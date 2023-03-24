@@ -5,3 +5,28 @@
     max-width: 1182px;
     @apply mx-auto px-4;
 }
+@font-face {
+    font-family: 'Philosopher';
+    src: url('public/fonts/Philosopher-Bold.ttf');
+    font-weight:regular;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Philosopher';
+    src: url('public/fonts/Philosopher-BoldItalic.ttf');
+    font-weight:regular;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Philosopher';
+    src: url('public/fonts/Philosopher-Regular.ttf');
+    font-weight:regular;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Tenor Sans';
+    src: url('public/fonts/TenorSans-Regular.ttf');
+    font-weight:regular;
+    font-style: normal;
+  }

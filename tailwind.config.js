@@ -14,10 +14,12 @@ module.exports = {
       'white':'#ffffff',
       'bglight':'#F9F2EE',
       'secondery-rose':'#F4D7B0',
+      'gradone':'#A0D8F0',
+      'gradmiddel':'#9296A0',
     },
     fontFamily: {
-      'philo': ['Philosopher','sans-serif'],
-      'Tenor':['Tenor Sans','sans-serif'],
+      'Philosopher': ['Philosopher', 'sans-serif'],
+      'tenor':['Tenor Sans','sans-serif'],
     },
     fontSize: {
       '2xlarge':'32px',
