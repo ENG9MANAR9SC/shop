@@ -4,17 +4,17 @@
             <div class="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 justify-items-start">
                 <div class="flex flex-col justify-center">      
                     <img src="./icons/unsplash_gTV2osuOsJc.png" alt="" class="w-[129px] h-[129px]">
-                    <div class="text-large font-Tenor">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</div>
+                    <div class="text-large font-tenor">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</div>
                 </div>
                 <div>
-                    <h3 class="text-xlarge font-philo font-bold text-secondery my-12">Contact us</h3>
+                    <h3 class="text-xlarge font-Philosopher font-bold text-secondery my-12">Contact us</h3>
                     <div class="flex my-3">
                         <img src="./icons/location.png" alt="">
-                        <a href="" class="px-3">Erbil,Ankawa Street</a>
+                        <a href="" class="px-3 font-tenor">Erbil,Ankawa Street</a>
                     </div>
                     <div class="flex my-3">
                         <img src="./icons/email.png" alt="">
-                        <a href="" class="px-3">Email@email.com</a> 
+                        <a href="" class="px-3 font-tenor">Email@email.com</a> 
                     </div>
                     <div class="flex my-3">
                         <img src="./icons/call.png" alt="">
@@ -26,33 +26,33 @@
                     </div>
                 </div>
                 <div>
-                    <h3 class="text-xlarge font-philo font-bold text-secondery my-12">Social Media</h3>
+                    <h3 class="text-xlarge font-Philosopher font-bold text-secondery my-12">Social Media</h3>
                     <div class="flex my-3">
                         <img src="./icons/youtube.png" alt="">
-                        <a href="" class="px-3">Youtube.com</a>
+                        <a href="" class="px-3 font-tenor">Youtube.com</a>
                     </div>
                     <div class="flex my-3">
                         <img src="./icons/facebook.png" alt="">
-                        <a href="" class="px-3">Facebook.com</a>
+                        <a href="" class="px-3 font-tenor">Facebook.com</a>
                     </div>
                     <div class="flex my-3">
                         <img src="./icons/insta.png" alt="">
-                        <a href="" class="px-3">Instgram</a>
+                        <a href="" class="px-3 font-tenor">Instgram</a>
                     </div>
                     <div class="flex my-3">
                         <img src="./icons/whatsup.png" alt="">
-                        <a href="" class="px-3">Whats up</a>
+                        <a href="" class="px-3 font-tenor">Whats up</a>
                     </div>
                 </div>
                 <div class="">
-                    <h3 class="text-xlarge font-philo font-bold text-secondery my-12">Support</h3>
-                    <div class="my-4"><a href="" class="px-3">FAQs</a></div>
-                    <div class="my-4"><a href="" class="px-3">Terms of Use</a></div>
-                    <div class="my-4"><a href="" class="px-3">Privacy Policy</a></div>
+                    <h3 class="my-12 text-xlarge font-Philosopher font-bold text-secondery ">Support</h3>
+                    <div class="my-4 font-tenor"><a href="" class="px-3">FAQs</a></div>
+                    <div class="my-4 font-tenor"><a href="" class="px-3">Terms of Use</a></div>
+                    <div class="my-4 font-tenor"><a href="" class="px-3">Privacy Policy</a></div>
                 </div>
             </div>
             <!-- list -->
-            <div class="flex flex-wrap justify-center text-large font-philo font-bold text-secondery mt-4">
+            <div class="flex flex-wrap justify-center text-large font-Philosopher font-bold text-secondery mt-4">
                 <a href="" class="mx-2">Home</a>
                 <a href="" class="mx-2">Shop</a>
                 <a href="" class="mx-2">Categories</a>
@@ -63,7 +63,7 @@
             <!-- Line -->
             <div class="width-full h-0.5 bg-secondery my-2 "></div>
             <!-- 2023 -->
-            <div class="flex justify-between text-base font-Tenor text-primary">
+            <div class="flex justify-between text-base font-tenor text-primary">
                 <div>All Reserved by Company 2023</div>
                 <div>Gold Light</div>
             </div>

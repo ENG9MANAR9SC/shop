@@ -11,8 +11,13 @@ const router = createRouter({
     },
     {
       path: '/index',
-      name: 'home',
+      name: 'index',
       component: () => import('../components/categories/index.vue')
+    },
+    {
+      path: '/card',
+      name: 'card',
+      component: () => import('../components/cardnew.vue')
     },
     
   ]

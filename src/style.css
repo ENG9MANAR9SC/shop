@@ -7,26 +7,26 @@
 }
 @font-face {
     font-family: 'Philosopher';
-    src: url('public/fonts/Philosopher-Bold.ttf');
+    src: url('/fonts/Philosopher-Bold.ttf');
     font-weight:regular;
     font-style: normal;
   }
   @font-face {
     font-family: 'Philosopher';
-    src: url('public/fonts/Philosopher-BoldItalic.ttf');
+    src: url('/fonts/Philosopher-BoldItalic.ttf');
     font-weight:regular;
     font-style: normal;
   }
   @font-face {
     font-family: 'Philosopher';
-    src: url('public/fonts/Philosopher-Regular.ttf');
+    src: url('/fonts/Philosopher-Regular.ttf');
     font-weight:regular;
     font-style: normal;
   }
 
   @font-face {
     font-family: 'Tenor Sans';
-    src: url('public/fonts/TenorSans-Regular.ttf');
+    src: url('/fonts/TenorSans-Regular.ttf');
     font-weight:regular;
     font-style: normal;
   }
