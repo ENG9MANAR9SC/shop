@@ -12,7 +12,7 @@
 
         <div class=" relative mt-16 mb-8">
             <div class="c-container">
-                    <h2 class="text-2xlarge text-secondery font-Philosopher ">Categories</h2>
+                    <h2 class="text-2xlarge text-secondery font-Philosopher font-bold">Categories</h2>
                     <div class="flex flex-wrap justify-between gap-2">
                         <category v-for="category in categories" :key="category.title" :title="category.title" :description="category.description" :image="category.image" class="w-1/5"/>
                     </div>
@@ -24,68 +24,14 @@
             <button class="px-8 py-2 bg-secondery text-white rounded-[30px] font-tenor">Load More</button>
         </div>
 
-        <div class="relative mt-16 mb-8">
+        <div class=" relative mt-16 mb-8">
             <div class="c-container">
-                <h2 class="text-2xlarge text-secondery  font-bold  ">New Products</h2>
-                <div class="flex flex-col items-center">
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                    <div v-for="(card, index) in displayedCards" :key="index" class="bg-white rounded-lg shadow-md p-4">
-                        <h2 class="text-xl font-medium">{{ card.title }}</h2>
-                        <p class="text-gray-500">{{ card.description }}</p>
+                    <h2 class="text-2xlarge text-secondery font-Philosopher font-bold">New Products</h2>
+                    <div class="flex flex-wrap justify-between gap-2">
+                        <cardnew v-for="cardnew in cardnews" :key="cardnew.title" :title="cardnew.title"  :image="cardnew.image" class="w-1/5"/>
                     </div>
-                </div>
-                <nav class="mt-8" v-if="pageCount > 1">
-                    <ul class="flex items-center">
-                        <li>
-                        <button
-                            @click="changePage(1)"
-                            :disabled="currentPage === 1"
-                            class="px-3 py-2 rounded-lg text-white bg-blue-500 hover:bg-blue-600"
-                        >
-                            First
-                        </button>
-                        </li>
-                        <li>
-                        <button
-                            @click="changePage(currentPage - 1)"
-                            :disabled="currentPage === 1"
-                            class="px-3 py-2 rounded-lg text-white bg-blue-500 hover:bg-blue-600"
-                        >
-                            Previous
-                        </button>
-                        </li>
-                        <li v-for="page in pageCount" :key="page">
-                            <button
-                                @click="changePage(page)"
-                                :class="{ 'bg-blue-500 text-white': currentPage === page, 'hover:bg-blue-600': currentPage !== page }"
-                                class="px-3 py-2 rounded-lg"
-                            >
-                                {{ page }}
-                            </button>
-                        </li>
-                        <li>
-                            <button
-                                @click="changePage(currentPage + 1)"
-                                :disabled="currentPage === pageCount"
-                                class="px-3 py-2 rounded-lg text-white bg-blue-500 hover:bg-blue-600"
-                                >
-                                Next
-                            </button>
-                        </li>
-                        <li>
-                            <button
-                                @click="changePage(pageCount)"
-                                :disabled="currentPage === pageCount"
-                                class="px-3 py-2 rounded-lg text-white bg-blue-500 hover:bg-blue-600"
-                            >
-                                Last
-                            </button>
-                        </li>
-                    </ul>
-                </nav>
             </div>
-            </div>
-            <div class="absolute bg-primary h-40 w-11/12 top-1/2 rounded-tr-[60px] rounded-br-lg z-[-1]"></div>
+            <div class="absolute bg-primary-blue opacity-30 h-40 w-11/12  top-1/2 rounded-tr-[60px] rounded-br-lg z-[-2]"></div>
         </div>
        
     </div>
@@ -153,7 +99,7 @@
 </template>
 <script>
 import category from "../categories/card.vue";
-
+import cardnew from "../cardnew.vue";
 export default {
   data() {
     return {
@@ -178,9 +124,27 @@ export default {
           description: "This is the description for card 4.",
           image: "../icons/drinks/drink4.png",
         },
-    ],
+        ],
+        cardnews: [
+                {
+                    title:"Carrots",
+                    image: "../icons/drinks/drink1.png",
+                },
+                {
+                    title:"PineApple",
+                    image: "../icons/drinks/drink2.png",
+                },
+                {
+                    title:"Orange",
+                    image: "../icons/drinks/drink3.png",
+                },
+                {
+                    title:"Carrots",
+                    image: "../icons/drinks/drink4.png",
+                }
+        ],
 
-       cards: [
+     /*   cards: [
         { title: 'Card 1', description: 'This is the description for card 1.' },
         { title: 'Card 2', description: 'This is the description for card 2.' },
         { title: 'Card 3', description: 'This is the description for card 3.' },
@@ -222,11 +186,12 @@ export default {
         return;
         }
         this.currentPage = page;
-        },
-        
+         */
+        };
     },
         components: {
             category,
+            cardnew,
         },
         
         };
