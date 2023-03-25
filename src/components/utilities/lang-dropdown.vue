@@ -34,15 +34,15 @@ export default {
         languageIcons: {
           en: {
             name: 'English',
-            icon: '../ '
+            icon: '/icons/united-kingdom.png'
           },
           ar: {
         name: 'Arabic',
-        icon: ".../icons/united-arab-emirates.png"
+        icon: "/icons/united-arab-emirates.png"
       },
       ku: {
         name: 'Kurdish',
-        icon: '../icons/united-arab-emirates.png'
+        icon: '/icons/united-arab-emirates.png'
       }
     }
   };

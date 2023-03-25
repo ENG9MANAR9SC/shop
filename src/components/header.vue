@@ -4,7 +4,7 @@
             <div class="h-8 bg-primary">
                 <div class="c-container flex justify-between text-white">
                     <div class="flex">
-                        <img src="./icons/socialmedia/call.png" alt="" class="h-6 w-6 mx-1 mt-1">
+                        <img src="/icons/socialmedia/call.png" alt="" class="h-6 w-6 mx-1 mt-1">
                         <span>+964 847 857</span>
                     </div>
 
@@ -17,7 +17,7 @@
             <div class="bg-bglight">
                 <div class="c-container flex justify-between items-center">
                     <div class="">
-                        <img src="./icons/logo.png" alt="" width="62px" height="62px">
+                        <img src="/icons/logo.png" alt="" width="62px" height="62px">
                     </div>
 
                     <!-- list Desktop & mobile -->
@@ -54,8 +54,8 @@
                     </nav>
 
                     <div class="flex">
-                        <img src="./icons/searchead.png" alt="" class="w-8 h-8 p-1" >
-                        <img src="./icons/shophead.png" alt="" class="w-8 h-8 p-1" >
+                        <img src="/icons/searchead.png" alt="" class="w-8 h-8 p-1" >
+                        <img src="/icons/shophead.png" alt="" class="w-8 h-8 p-1" >
                     </div>
 
                 </div>

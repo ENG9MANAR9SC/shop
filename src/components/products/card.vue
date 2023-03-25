@@ -1,12 +1,27 @@
 <template>
-    <div class="c-container">
-        <img src="../icons/drinks/drink1.png" alt="" class=" rounded-[20px]">
-        <h3 class="text-xlarge text-secondery font-Philosopher font-bold">Carrrots</h3>
-        <div class="text-base text-primary font-tenor px-2 overflow-hidden text-ellipsis h-[12rem] my-2">graphic, print, and industries for previewing layouts and visual mockups layouts visual mockups </div>
-        <div class="flex">
-            <span class="mx-2">48$</span>
-            <span class="mx-2">66$</span>
+    <div class="">
+        <div class="mt-8 p-0.5 rounded-[20px] max-w-sm bg-gradient-to-r from-gradone via-gradmiddel to-gradone">
+            <div class="rounded-[20px] bg-white p-4">
+                <img src="/icons/drinks/drink1.png" alt="" class="rounded-[20px]">
+                <h3 class="text-xl text-secondery font-philosopher font-bold my-2">{{ title }}</h3>
+                <div class="text-base text-primary font-tenor px-2 overflow-hidden text-ellipsis h-24 my-2">{{ description }} </div>
+                <div class="flex my-2">
+                    <span class="mx-2 text-xl text-secondery">48$</span>
+                    <span class="mx-2 text-base text-primary line-through my-2">66$</span>
+                </div>
+                <button class="btn-secondery">Add to Cart</button>
+            </div>
         </div>
-        <button class="btn">Add to Cart</button>
     </div>
 </template>
+
+<script>
+export default {
+  name: "product",
+  props: {
+    title: String,
+    description: String,
+   /*  image: String,  */
+  },
+};
+</script>

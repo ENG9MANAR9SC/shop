@@ -1,11 +1,13 @@
 
 
 <template>
-  <CustomHeader></CustomHeader>
-  <main class="">
-      <RouterView />
-    </main>
-    <CustomFooter></CustomFooter>
+    <div class="flex flex-col min-h-screen">
+        <CustomHeader></CustomHeader>
+        <main class="">
+            <RouterView />
+        </main>
+        <CustomFooter class="mt-auto"></CustomFooter>
+        </div>
 </template>
 
 <style scoped>
