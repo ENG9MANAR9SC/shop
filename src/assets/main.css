@@ -1,7 +1,41 @@
-@import './base.css';
 
 
 @tailwind base;
 @tailwind components;
+
+.btn {
+    @apply bg-secondery text-white px-8 py-2 rounded-[30px] font-tenor m-3;
+}
+
+.c-container {
+    max-width: 1182px;
+    @apply mx-auto px-4;
+}
+@font-face {
+    font-family: 'Philosopher';
+    src: url('/fonts/Philosopher-Bold.ttf');
+    font-weight:regular;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Philosopher';
+    src: url('/fonts/Philosopher-BoldItalic.ttf');
+    font-weight:regular;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Philosopher';
+    src: url('/fonts/Philosopher-Regular.ttf');
+    font-weight:regular;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tenor Sans';
+    src: url('/fonts/TenorSans-Regular.ttf');
+    font-weight:regular;
+    font-style: normal;
+}
+
 @tailwind utilities;
 

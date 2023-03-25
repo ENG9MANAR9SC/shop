@@ -5,11 +5,11 @@
                 <div class="c-container flex justify-between text-white">
                     <div class="flex">
                         <img src="./icons/socialmedia/call.png" alt="" class="h-6 w-6 mx-1 mt-1">
-                        +964 847 857
+                        <span>+964 847 857</span>
                     </div>
 
                     <div>
-                         <dropdown class="sm:block hidden"></dropdown>
+                        <dropdown class="sm:block hidden"></dropdown>
                     </div>
                 </div>
             </div>
@@ -47,12 +47,12 @@
                                     </div>
                                 </div>
                                     <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-secondery hover:text-gray-200 mr-4">Blog</a>
-                                    <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-secondery hover:text-gray-200">Contact us</a>                                  
+                                    <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-secondery hover:text-gray-200">Contact us</a>
                                     <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-secondery hover:text-gray-200 ml-4"> About us </a>
                             </div>
                         </div>
                     </nav>
-        
+
                     <div class="flex">
                         <img src="./icons/searchead.png" alt="" class="w-8 h-8 p-1" >
                         <img src="./icons/shophead.png" alt="" class="w-8 h-8 p-1" >
@@ -78,13 +78,13 @@ export default{
     const toggleMenu = () => {
       showMenu.value = !showMenu.value;
     };
- 
+
     return {
       showMenu,
       showCategories,
       toggleMenu,
     };
-   
+
   },
 
 }

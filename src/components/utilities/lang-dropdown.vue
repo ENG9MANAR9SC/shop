@@ -10,7 +10,7 @@
     </button>
 
     <div class="absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 divide-y divide-gray-100" :class="[isOpen ? 'block' : 'hidden']">
-		<template v-for="language in languages">
+		<template v-for="language in languages" :key="language">
 			<button
 			class="flex items-center justify-between w-full px-4 py-2 text-sm text-secondery hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:bg-gray-100 focus:text-gray-900" :class="{ 'font-medium': activeLanguage === language }"	@click="selectLanguage(language)">
 			<img :src="languageIcons[language].icon" :alt="languageIcons[language].name" class="h-5 w-5" />
@@ -34,7 +34,7 @@ export default {
         languageIcons: {
           en: {
             name: 'English',
-            icon: '../ ' 
+            icon: '../ '
           },
           ar: {
         name: 'Arabic',
