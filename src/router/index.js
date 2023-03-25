@@ -10,19 +10,24 @@ const router = createRouter({
       component: () => import('../components/home.vue')
     },
     {
-      path: '/index',
-      name: 'index',
+      path: '/indexCategory',
+      name: 'indexCategory',
       component: () => import('../components/categories/index.vue')
+    },
+    {
+      path: '/indexProduct',
+      name: 'indexProduct',
+      component: () => import('../components/products/index.vue')
+    },
+    {
+      path: '/showProduct',
+      name: 'showProduct',
+      component: () => import('../components/products/show.vue')
     },
     {
       path: '/card',
       name: 'card',
-      component: () => import('../components/cardnew.vue')
-    },
-    {
-      path: '/product',
-      name: 'product',
-      component: () => import('../components/products/index.vue')
+      component: () => import('../components/products/card.vue')
     },
     
   ]
