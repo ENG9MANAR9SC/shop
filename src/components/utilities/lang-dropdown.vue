@@ -34,11 +34,11 @@ export default {
         languageIcons: {
           en: {
             name: 'English',
-            icon: '../icons/united-kingdom.png' 
+            icon: '../ ' 
           },
           ar: {
         name: 'Arabic',
-        icon: '../icons/united-arab-emirates.png'
+        icon: ".../icons/united-arab-emirates.png"
       },
       ku: {
         name: 'Kurdish',

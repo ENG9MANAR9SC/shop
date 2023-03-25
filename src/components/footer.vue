@@ -1,46 +1,46 @@
 <template>
     <footer>
-        <div class="c-container text-primary mt-6">
+        <div class="c-container text-primary mt-16">
             <div class="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 justify-items-start">
                 <div class="flex flex-col justify-center">      
-                    <img src="./icons/unsplash_gTV2osuOsJc.png" alt="" class="w-[129px] h-[129px]">
+                    <img src="../components/icons/logo.png " alt="" class="w-[129px] h-[129px]">
                     <div class="text-large font-tenor">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</div>
                 </div>
                 <div>
                     <h3 class="text-xlarge font-Philosopher font-bold text-secondery my-12">Contact us</h3>
                     <div class="flex my-3">
-                        <img src="./icons/location.png" alt="">
+                        <img src="./icons/socialmedia/location.png" alt="" class="w-6 h-6">
                         <a href="" class="px-3 font-tenor">Erbil,Ankawa Street</a>
                     </div>
                     <div class="flex my-3">
-                        <img src="./icons/email.png" alt="">
+                        <img src="./icons/socialmedia/email.png" alt="" class="w-6 h-6">
                         <a href="" class="px-3 font-tenor">Email@email.com</a> 
                     </div>
                     <div class="flex my-3">
-                        <img src="./icons/call.png" alt="">
+                        <img src="./icons/socialmedia/call.png" alt="" class="w-6 h-6">
                         <a href="" class="px-3">+964 654 765</a> 
                     </div>
                     <div class="flex my-3">
-                        <img src="./icons/call.png" alt="">
+                        <img src="./icons/socialmedia/call.png" alt="" class="w-6 h-6">
                         <a href="" class="px-3">+964 654 765</a> 
                     </div>
                 </div>
                 <div>
                     <h3 class="text-xlarge font-Philosopher font-bold text-secondery my-12">Social Media</h3>
                     <div class="flex my-3">
-                        <img src="./icons/youtube.png" alt="">
-                        <a href="" class="px-3 font-tenor">Youtube.com</a>
+                        <img src="./icons/socialmedia/youtube.png" alt="" class="w-6 h-6">
+                        <a href="" class="px-3 font-tenor" >Youtube.com</a>
                     </div>
                     <div class="flex my-3">
-                        <img src="./icons/facebook.png" alt="">
+                        <img src="./icons/socialmedia/facebook.png" alt="" class="w-6 h-6">
                         <a href="" class="px-3 font-tenor">Facebook.com</a>
                     </div>
                     <div class="flex my-3">
-                        <img src="./icons/insta.png" alt="">
+                        <img src="./icons/socialmedia/instgram.png" alt="" class="w-6 h-6">
                         <a href="" class="px-3 font-tenor">Instgram</a>
                     </div>
                     <div class="flex my-3">
-                        <img src="./icons/whatsup.png" alt="">
+                        <img src="./icons/socialmedia/whatsup.png" alt="" class="w-6 h-6">
                         <a href="" class="px-3 font-tenor">Whats up</a>
                     </div>
                 </div>

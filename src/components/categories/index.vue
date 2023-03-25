@@ -2,7 +2,7 @@
     <div class="">
         <div class="c-container relative">
             <!-- Banner Image alt="Banner Image"-->
-            <img class="w-full h-72 object-cover rounded-tl-lg rounded-tr-[60px] rounded-b-lg" src="../icons/drinks/drink1.png" >
+            <img class="w-full lg:h-72 sm:h-36 object-cover rounded-tl-lg rounded-tr-[60px] rounded-b-lg" src="../icons/drinks/drink1.png" >
             <!-- Text and Buttons Above Image -->
             <div class="absolute top-0 left-8 h-full flex flex-col justify-center p-4">
                 <h2 class="text-white text-2xl font-tenor mb-4">You can Now shop what you want</h2>
@@ -14,10 +14,10 @@
             <div class="c-container">
                     <h2 class="text-2xlarge text-secondery font-Philosopher font-bold">Categories</h2>
                     <div class="flex flex-wrap justify-between gap-2">
-                        <category v-for="category in categories" :key="category.title" :title="category.title" :description="category.description" :image="category.image" class="w-1/5"/>
+                        <category v-for="category in categories" :key="category.title" :title="category.title" :description="category.description" :image="category.image" class="lg:w-1/5 md:w-1/3 sm:w-1/2"/>
                     </div>
             </div>
-            <div class="absolute bg-primary h-40 w-11/12  top-1/2 rounded-tr-[60px] rounded-br-lg z-[-1]"></div>
+            <div class="absolute bg-primary-rose lg:h-40 md:h-60 sm:h-60 w-11/12  top-1/2 rounded-tr-[60px] rounded-br-lg z-[-1]"></div>
         </div>
 
         <div class="flex justify-center mt-8">
@@ -28,10 +28,20 @@
             <div class="c-container">
                     <h2 class="text-2xlarge text-secondery font-Philosopher font-bold">New Products</h2>
                     <div class="flex flex-wrap justify-between gap-2">
-                        <cardnew v-for="cardnew in cardnews" :key="cardnew.title" :title="cardnew.title"  :image="cardnew.image" class="w-1/5"/>
+                        <cardnew v-for="cardnew in cardnews" :key="cardnew.title" :title="cardnew.title"  :image="cardnew.image" class="lg:w-1/5 md:w-1/3 sm:w-1/2"/>
                     </div>
             </div>
             <div class="absolute bg-primary-blue opacity-30 h-40 w-11/12  top-1/2 rounded-tr-[60px] rounded-br-lg z-[-2]"></div>
+        </div>
+
+        <div class=" relative mt-16 mb-8">
+            <div class="c-container">
+                    <h2 class="text-2xlarge text-secondery font-Philosopher font-bold">Best Products</h2>
+                    <div class="flex flex-wrap justify-between gap-2">
+                        <cardnew v-for="cardnew in cardnews" :key="cardnew.title" :title="cardnew.title"  :image="cardnew.image" class="lg:w-1/5 md:w-1/3 sm:w-1/2"/>
+                    </div>
+            </div>
+             <div class="absolute bg-primary-orange opacity-30 h-40 w-11/12  top-1/2 rounded-tr-[60px] rounded-br-lg z-[-2]"></div>
         </div>
        
     </div>
