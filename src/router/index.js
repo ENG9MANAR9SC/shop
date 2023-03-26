@@ -10,13 +10,13 @@ const router = createRouter({
       component: () => import('../components/home.vue')
     },
     {
-      path: '/indexCategory',
-      name: 'indexCategory',
+      path: '/Category',
+      name: 'Category',
       component: () => import('../components/categories/index.vue')
     },
     {
-      path: '/indexproduct',
-      name: 'indexProduct',
+      path: '/product',
+      name: 'Product',
       component: () => import('../components/products/index.vue')
     },
     {
@@ -33,6 +33,21 @@ const router = createRouter({
       path: '/cart',
       name: 'cart',
       component: () => import('../components/products/cart.vue')
+    },
+    {
+      path: '/blog',
+      name: 'blog',
+      component: () => import('../components/blogs/index.vue')
+    },
+    {
+      path: '/contact-us',
+      name: 'contact-us',
+      component: () => import('../components/contact-us.vue')
+    },
+    {
+      path: '/about-us',
+      name: 'about-us',
+      component: () => import('../components/about-us.vue')
     },
     
   ]
