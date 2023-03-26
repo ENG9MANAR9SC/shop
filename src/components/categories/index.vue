@@ -12,7 +12,7 @@
 
         <div class=" relative mt-16 mb-8">
             <div class="c-container">
-                    <h2 class="text-2xlarge text-secondery font-Philosopher font-bold">Categories</h2>
+                    <h2 class="h-header">Categories</h2>
                     <div class="flex flex-wrap justify-between gap-2">
                         <category v-for="category in categories" :key="category.title" :title="category.title" :description="category.description" :image="category.image" class="lg:w-1/5 md:w-1/3 sm:w-1/2"/>
                     </div>
@@ -26,22 +26,22 @@
 
         <div class=" relative mt-16 mb-8">
             <div class="c-container">
-                    <h2 class="text-2xlarge text-secondery font-Philosopher font-bold">New Products</h2>
+                    <h2 class="h-header">New Products</h2>
                     <div class="flex flex-wrap justify-between gap-2">
-                        <cardnew v-for="cardnew in cardnews" :key="cardnew.title" :title="cardnew.title"  :image="cardnew.image" class="lg:w-1/5 md:w-1/3 sm:w-1/2"/>
+                        <cardnew v-for="cardnew in cardnews" :key="cardnew.title" :title="cardnew.title" :image="cardnew.image" class="lg:w-1/5 md:w-1/3 sm:w-1/2"/>
                     </div>
             </div>
-            <div class="absolute bg-primary-blue opacity-30 h-40 w-11/12  top-1/2 rounded-tr-[60px] rounded-br-lg z-[-2]"></div>
+            <div class="absolute bg-primary-blue opacity-30 h-40 w-11/12 top-1/2 rounded-tr-[60px] rounded-br-lg z-[-2]"></div>
         </div>
 
         <div class=" relative mt-16 mb-8">
             <div class="c-container">
-                    <h2 class="text-2xlarge text-secondery font-Philosopher font-bold">Best Products</h2>
+                    <h2 class="h-header">Best Products</h2>
                     <div class="flex flex-wrap justify-between gap-2">
                         <cardnew v-for="cardnew in cardnews" :key="cardnew.title" :title="cardnew.title"  :image="cardnew.image" class="lg:w-1/5 md:w-1/3 sm:w-1/2"/>
                     </div>
             </div>
-             <div class="absolute bg-primary-orange opacity-30 h-40 w-11/12  top-1/2 rounded-tr-[60px] rounded-br-lg z-[-2]"></div>
+             <div class="absolute bg-primary-orange opacity-30 h-40 w-11/12 top-1/2 rounded-tr-[60px] rounded-br-lg z-[-2]"></div>
         </div>
        
     </div>

@@ -3,7 +3,7 @@
         <div class="mt-8 p-0.5 rounded-[20px] max-w-sm bg-gradient-to-r from-gradone via-gradmiddel to-gradone">
             <div class="rounded-[20px] bg-white p-4">
                 <img src="/icons/drinks/drink1.png" alt="" class="rounded-[20px]">
-                <h3 class="text-xl text-secondery font-philosopher font-bold my-2">{{ title }}</h3>
+                <h3 class="h-header my-2">{{ title }}</h3>
                 <div class="text-base text-primary font-tenor px-2 overflow-hidden text-ellipsis h-24 my-2">{{ description }} </div>
                 <div class="flex my-2">
                     <span class="mx-2 text-xl text-secondery">48$</span>
