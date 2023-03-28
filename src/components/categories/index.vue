@@ -2,11 +2,13 @@
     <div class="">
         <div class="c-container relative">
             <!-- Banner Image alt="Banner Image"-->
-            <img class="w-full lg:h-72 sm:h-36 object-cover rounded-tl-lg rounded-tr-[60px] rounded-b-lg" src="../icons/drinks/drink1.png" >
+            <img class="w-full lg:h-72 sm:h-36 object-cover rounded-tl-lg rounded-tr-[60px] rounded-b-lg" src="/icons/drinks/drink1.png" >
             <!-- Text and Buttons Above Image -->
             <div class="absolute top-0 left-8 h-full flex flex-col justify-center p-4">
                 <h2 class="text-white text-2xl font-tenor mb-4">You can Now shop what you want</h2>
-                <button class="bg-secondery text-white py-2 px-2 rounded-md shadow-md hover:shadow-lg transition duration-300 w-36">Shop Now</button>
+                <RouterLink to="/product">
+                    <button class="bg-secondery text-white py-2 px-2 rounded-md shadow-md hover:shadow-lg transition duration-300 w-36">Shop Now</button>
+                </RouterLink>
             </div>
         </div> 
 
@@ -138,19 +140,19 @@ export default {
         cardnews: [
                 {
                     title:"Carrots",
-                    image: "../icons/drinks/drink1.png",
+                    image: "/icons/drinks/drink1.png",
                 },
                 {
                     title:"PineApple",
-                    image: "../icons/drinks/drink2.png",
+                    image: "/icons/drinks/drink2.png",
                 },
                 {
                     title:"Orange",
-                    image: "../icons/drinks/drink3.png",
+                    image: "/icons/drinks/drink3.png",
                 },
                 {
                     title:"Carrots",
-                    image: "../icons/drinks/drink4.png",
+                    image: "/icons/drinks/drink4.png",
                 }
         ],
 

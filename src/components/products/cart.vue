@@ -12,19 +12,23 @@
         </ul>
 
         <div>
-            <img src="icons/drinks/drink1.png" alt="" class="w-64 h-44 object-cover">
-            <h3 class="text-xl text-secondery font-philosopher font-bold">Product Name</h3>
-            <div>
-                <span>Price</span>
-                <span>150$</span>
-            </div>
-            <div>
-                <span>Num</span>
-                <span>2</span>
-            </div>
-            <div>
-                <span>Total</span>
-                <span>400$</span>
+            <div class="custom-bgcolor p-0.5 rounded-lg">
+                <div class="bg-white p-2 rounded-lg">
+                    <img src="icons/drinks/drink1.png" alt="" class="w-64 h-44 object-cover rounded-t-lg">
+                    <h3 class="text-xl text-secondery font-philosopher font-bold my-2">Product Name</h3>
+                    <div class="my-1">
+                        <span>Price</span>
+                        <span class="mx-1">150$</span>
+                    </div>
+                    <div class="my-1">
+                        <span>Num</span>
+                        <span class="mx-1">2</span>
+                    </div>
+                    <div class="my-1 flex justify-between">
+                        <span>Total</span>
+                        <span>400$</span>
+                    </div>
+                </div>
             </div>
         </div>
 

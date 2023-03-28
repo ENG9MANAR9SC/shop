@@ -17,7 +17,7 @@
             <div class="bg-bglight font-philosopher font-bold">
                 <div class="c-container flex justify-between items-center">
                     <div class="">
-                        <img src="/icons/logo.png" alt="" width="62px" height="62px">
+                        <img src="/icons/logo.png" alt="" class="w-16 h-auto">
                     </div>
 
                     <!-- list Desktop & mobile -->
@@ -53,7 +53,7 @@
 
                     <div class="flex">
                         <img src="/icons/searchead.png" alt="" class="w-8 h-8 p-1" >
-                        <img src="/icons/shophead.png" alt="" class="w-8 h-8 p-1" >
+                        <RouterLink to="/cart"><img src="/icons/shophead.png" alt="" class="w-8 h-8 p-1" ></RouterLink>
                     </div>
 
                 </div>
