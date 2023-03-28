@@ -25,7 +25,7 @@
         <div class="flex justify-center mt-8">
             <button class="px-8 py-2 bg-secondery text-white rounded-[30px] font-tenor">Load More</button>
         </div>
-
+        <!-- New Products -->
         <div class=" relative mt-16 mb-8">
             <div class="c-container">
                     <h2 class="h-header">New Products</h2>
@@ -35,7 +35,7 @@
             </div>
             <div class="absolute bg-primary-blue opacity-30 h-40 w-11/12 top-1/2 rounded-tr-[60px] rounded-br-lg z-[-2]"></div>
         </div>
-
+        <!-- Best Products -->
         <div class=" relative mt-16 mb-8">
             <div class="c-container">
                     <h2 class="h-header">Best Products</h2>
@@ -111,7 +111,7 @@
 </template>
 <script>
 import category from "../categories/card.vue";
-import cardnew from "../cardnew.vue";
+import cardnew from "../utilities/cardnew.vue";
 export default {
   data() {
     return {

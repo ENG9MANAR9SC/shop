@@ -17,11 +17,11 @@
             <div class="bg-bglight font-philosopher font-bold">
                 <div class="c-container flex justify-between items-center">
                     <div class="">
-                        <img src="/icons/logo.png" alt="" class="w-16 h-auto">
+                        <RouterLink to="/"><img src="/icons/logo.png" alt="" class="w-16 h-auto"></RouterLink>
                     </div>
 
                     <!-- list Desktop & mobile -->
-                    <nav class="flex items-center justify-between flex-wrap bg-blue-500 p-6">
+                    <nav class="flex items-center justify-between flex-wrap p-6">
                         <div class="flex items-center flex-shrink-0 text-secondery mr-6">
                             <i class="fas fa-shopping-cart fa-2x"></i>
                             <span class=" text-xl tracking-tight ml-2">My Store</span>

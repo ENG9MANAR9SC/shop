@@ -61,7 +61,7 @@
                 <a href="" class="mx-2">About us</a>
             </div>
             <!-- Line -->
-            <div class="width-full h-0.5 bg-secondery my-2 "></div>
+            <div class="width-full h-0.5 bg-secondery my-2"></div>
             <!-- 2023 -->
             <div class="flex justify-between text-base font-tenor text-primary">
                 <div>All Reserved by Company 2023</div>

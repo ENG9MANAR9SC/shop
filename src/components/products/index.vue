@@ -33,13 +33,33 @@
             <product v-for="product in products" :key="product.title" :title="product.title" :description="product.description" :image="product.image" class="lg:w-1/5 md:w-1/3 sm:w-1/2"/>
         </div>
     </div>
+    <!-- New Products -->
+    <div class=" relative mt-16 mb-8">
+            <div class="c-container">
+                    <h2 class="h-header">New Products</h2>
+                    <div class="flex flex-wrap justify-between gap-2">
+                        <cardnew v-for="cardnew in cardnews" :key="cardnew.title" :title="cardnew.title" :image="cardnew.image" class="lg:w-1/5 md:w-1/3 sm:w-1/2"/>
+                    </div>
+            </div>
+            <div class="absolute bg-primary-blue opacity-30 h-40 w-11/12 top-1/2 rounded-tr-[60px] rounded-br-lg z-[-2]"></div>
+        </div>
+        <!-- Best Products -->
+        <div class=" relative mt-16 mb-8">
+            <div class="c-container">
+                    <h2 class="h-header">Best Products</h2>
+                    <div class="flex flex-wrap justify-between gap-2">
+                        <cardnew v-for="cardnew in cardnews" :key="cardnew.title" :title="cardnew.title"  :image="cardnew.image" class="lg:w-1/5 md:w-1/3 sm:w-1/2"/>
+                    </div>
+            </div>
+             <div class="absolute bg-primary-orange opacity-30 h-40 w-11/12 top-1/2 rounded-tr-[60px] rounded-br-lg z-[-2]"></div>
+        </div>
 
 
 </template>
 
 <script>
 import product from "../products/card.vue";
-
+import cardnew from "../utilities/cardnew.vue";
 export default {
   data() {
     return {
@@ -65,11 +85,32 @@ export default {
                     description:"graphic, print, and industries for previewing layouts and visual mockups layouts visua",
                 },
 
-        ]
+        ],
+        cardnews: [
+                {
+                    title:"Carrots",
+                    image: "/icons/drinks/drink1.png",
+                },
+                {
+                    title:"PineApple",
+                    image: "/icons/drinks/drink2.png",
+                },
+                {
+                    title:"Orange",
+                    image: "/icons/drinks/drink3.png",
+                },
+                {
+                    title:"Carrots",
+                    image: "/icons/drinks/drink4.png",
+                }
+        ],
            }
         },
+        
+    
         components: {
             product,
+            cardnew,
         },
-}
+        }
 </script>

@@ -11,7 +11,7 @@
             </li>
         </ul>
 
-        <div>
+        <div class="w-1/4">
             <div class="custom-bgcolor p-0.5 rounded-lg">
                 <div class="bg-white p-2 rounded-lg">
                     <img src="icons/drinks/drink1.png" alt="" class="w-64 h-44 object-cover rounded-t-lg">
@@ -20,9 +20,13 @@
                         <span>Price</span>
                         <span class="mx-1">150$</span>
                     </div>
-                    <div class="my-1">
+                    <div class="my-1 flex font-tenor ">
                         <span>Num</span>
-                        <span class="mx-1">2</span>
+                        <div class="border rounded-md p-1 w-1/2 mx-1 flex justify-between font-bold">
+                            <span class="">+</span>
+                            <span class="">2</span>
+                            <span class="">_</span>
+                        </div>
                     </div>
                     <div class="my-1 flex justify-between">
                         <span>Total</span>
@@ -32,7 +36,7 @@
             </div>
         </div>
 
-        <button class="btn flex items-center">Check out</button>
+        <button class="btn flex justify-center">Check out</button>
       
     </div>
   </template>
