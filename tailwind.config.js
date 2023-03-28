@@ -14,7 +14,6 @@ module.exports = {
       'white':'#ffffff',
       'bglight':'#F9F2EE',
       'secondery-rose':'#F4D7B0',
-      'gradone':'#A0D8F0',
       'gradmiddel':'#9296A0',
     },
     fontFamily: {

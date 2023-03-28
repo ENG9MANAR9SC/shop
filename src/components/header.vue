@@ -1,6 +1,6 @@
 <template>
     <header>
-        <div class="mb-6">
+        <div class="">
             <div class="h-8 bg-primary">
                 <div class="c-container flex justify-between text-white">
                     <div class="flex">
@@ -14,7 +14,7 @@
                 </div>
             </div>
 
-            <div class="bg-bglight">
+            <div class="bg-bglight font-philosopher font-bold">
                 <div class="c-container flex justify-between items-center">
                     <div class="">
                         <img src="/icons/logo.png" alt="" width="62px" height="62px">
@@ -24,7 +24,7 @@
                     <nav class="flex items-center justify-between flex-wrap bg-blue-500 p-6">
                         <div class="flex items-center flex-shrink-0 text-secondery mr-6">
                             <i class="fas fa-shopping-cart fa-2x"></i>
-                            <span class="font-semibold text-xl tracking-tight ml-2">My Store</span>
+                            <span class=" text-xl tracking-tight ml-2">My Store</span>
                         </div>
                         <div class="block lg:hidden">
                             <button class="flex items-center px-3 py-2 border rounded text-secondery border-white hover:text-gray-200 hover:border-gray-200" @click="toggleMenu">
@@ -32,7 +32,7 @@
                             </button>
                         </div>
                         <div :class="{ 'hidden': !showMenu }" class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-                            <div class="text-sm lg:flex-grow">
+                            <div class="text-lg lg:flex-grow">
                                 <RouterLink  class="block mt-4 lg:inline-block lg:mt-0 text-secondery hover:text-gray-200 mr-4" to="/"> Home </RouterLink>
                                 <RouterLink class="block mt-4 lg:inline-block lg:mt-0 text-secondery hover:text-gray-200 mr-4" to="/product">  Shop</RouterLink>
                                 <div class="relative mt-4 lg:hidden">

@@ -1,5 +1,5 @@
 <template>
-    <div class="mt-8 p-0.5 rounded-[30px] max-w-sm bg-gradient-to-r from-gradone via-gradmiddel to-gradone">
+    <div class="mt-8 p-0.5 rounded-[30px] max-w-sm bg-gradient-to-r custom-bgcolor">
         <div class="bg-secondery-rose h-96 rounded-[30px] flex flex-col">
             <img src="../icons/drinks/drink3.png" alt="drink" class="w-full rounded-t-[30px]">
             <h2 class="h-header px-2 my-2">{{ title }}</h2>

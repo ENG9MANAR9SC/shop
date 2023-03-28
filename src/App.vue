@@ -3,12 +3,12 @@
 <template>
     <div class="flex flex-col min-h-screen">
         <CustomHeader></CustomHeader>
-        <main class="">
-            <RouterView />
+        <main class="bg-primary-blue/10 ">
+             <RouterView />
         </main>
         <CustomFooter class="mt-auto"></CustomFooter>
         </div>
-</template>
+</template>"
 
 <style scoped>
 

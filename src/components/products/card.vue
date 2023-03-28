@@ -1,6 +1,6 @@
 <template>
     <div class="">
-        <div class="mt-8 p-0.5 rounded-[20px] max-w-sm bg-gradient-to-r from-gradone via-gradmiddel to-gradone">
+        <div class="mt-8 p-0.5 rounded-[20px] max-w-sm bg-gradient-to-r custom-bgcolor">
             <div class="rounded-[20px] bg-white p-4">
                 <img src="/icons/drinks/drink1.png" alt="" class="rounded-[20px]">
                 <h3 class="h-header my-2">{{ title }}</h3>
