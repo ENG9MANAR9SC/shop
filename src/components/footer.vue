@@ -1,13 +1,13 @@
 <template>
     <footer class="bg-bglight">
-        <div class="c-container text-primary ">
-            <div class="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 justify-items-start">
+        <div class="c-container text-primary mt-8">
+            <div class="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 justify-items-start gap-2">
                 <div class="flex flex-col justify-center">      
                     <img src="/icons/logo.png " alt="" class="w-32 h-auto">
-                    <div class="text-large font-tenor">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</div>
+                    <div class="text-large font-tenor mt-2">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</div>
                 </div>
                 <div>
-                    <h3 class="font-philosopher text-xl font-bold text-secondery my-12">Contact us</h3>
+                    <h3 class="font-philosopher text-xl font-bold text-secondery">Contact us</h3>
                     <div class="flex my-3">
                         <img src="/icons/socialmedia/location.png" alt="" class="w-6 h-6">
                         <a href="" class="px-3 font-tenor">Erbil,Ankawa Street</a>
@@ -26,7 +26,7 @@
                     </div>
                 </div>
                 <div>
-                    <h3 class="text-xl font-philosopher font-bold text-secondery my-12">Social Media</h3>
+                    <h3 class="text-xl font-philosopher font-bold text-secondery">Social Media</h3>
                     <div class="flex my-3">
                         <img src="/icons/socialmedia/youtube.png" alt="" class="w-6 h-6">
                         <a href="" class="px-3 font-tenor" >Youtube.com</a>
@@ -45,7 +45,7 @@
                     </div>
                 </div>
                 <div class="">
-                    <h3 class="my-12 text-xl font-philosopher font-bold text-secondery ">Support</h3>
+                    <h3 class="text-xl font-philosopher font-bold text-secondery ">Support</h3>
                     <div class="my-4 font-tenor"><a href="" class="px-3">FAQs</a></div>
                     <div class="my-4 font-tenor"><a href="" class="px-3">Terms of Use</a></div>
                     <div class="my-4 font-tenor"><a href="" class="px-3">Privacy Policy</a></div>

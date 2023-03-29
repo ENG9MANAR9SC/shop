@@ -15,6 +15,7 @@ module.exports = {
       'bglight':'#F9F2EE',
       'secondery-rose':'#F4D7B0',
       'gradmiddel':'#9296A0',
+      'black' : '#000000',
     },
     fontFamily: {
       'philosopher': ['Philosopher', 'sans-serif'],

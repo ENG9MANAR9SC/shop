@@ -22,10 +22,10 @@
 
                     <!-- list Desktop & mobile -->
                     <nav class="flex items-center justify-between flex-wrap p-6">
-                        <div class="flex items-center flex-shrink-0 text-secondery mr-6">
+                        <!-- <div class="flex items-center flex-shrink-0 text-secondery mr-6">
                             <i class="fas fa-shopping-cart fa-2x"></i>
                             <span class=" text-xl tracking-tight ml-2">My Store</span>
-                        </div>
+                        </div> -->
                         <div class="block lg:hidden">
                             <button class="flex items-center px-3 py-2 border rounded text-secondery border-white hover:text-gray-200 hover:border-gray-200" @click="toggleMenu">
                                 <i class="fas fa-bars"></i>
@@ -51,7 +51,7 @@
                         </div>
                     </nav>
 
-                    <div class="flex">
+                    <div class="flex gap-2">
                         <img src="/icons/searchead.png" alt="" class="w-8 h-8 p-1" >
                         <RouterLink to="/cart"><img src="/icons/shophead.png" alt="" class="w-8 h-8 p-1" ></RouterLink>
                     </div>

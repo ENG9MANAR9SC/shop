@@ -2,7 +2,7 @@
     <div class="mt-8 p-0.5 rounded-[30px] max-w-sm bg-gradient-to-r custom-bgcolor">
         <div class="bg-secondery-rose h-96 rounded-[30px] flex flex-col">
             <img src="/icons/drinks/drink3.png" alt="drink" class="w-full rounded-t-[30px]">
-            <h2 class="h-header px-2 my-2">{{ title }}</h2>
+            <h2 class="h-sec px-2 my-2">{{ title }}</h2>
             <div class="text-base text-primary font-tenor px-2 overflow-hidden text-ellipsis h-48 my-2">{{ description }}</div>
             <RouterLink to="/product"><button class="bg-secondery text-white px-8 py-2 rounded-[30px] font-tenor m-3">Shop Now</button></RouterLink>
         </div>

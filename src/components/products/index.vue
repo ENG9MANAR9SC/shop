@@ -46,7 +46,7 @@
         <!-- Best Products -->
         <div class=" relative mt-16 mb-8">
             <div class="c-container">
-                    <h2 class="h-header">Best Products</h2>
+                    <h2 class="h-header ">Best Products</h2>
                     <div class="flex flex-wrap justify-between gap-2">
                         <cardnew v-for="cardnew in cardnews" :key="cardnew.title" :title="cardnew.title"  :image="cardnew.image" class="lg:w-1/5 md:w-1/3 sm:w-1/2"/>
                     </div>

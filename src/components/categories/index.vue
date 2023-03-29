@@ -2,7 +2,9 @@
     <div class="">
         <div class="c-container relative">
             <!-- Banner Image alt="Banner Image"-->
-            <img class="w-full lg:h-72 sm:h-36 object-cover rounded-tl-lg rounded-tr-[60px] rounded-b-lg" src="/icons/drinks/drink1.png" >
+            <div class="bg-black rounded-tl-lg lg:rounded-tr-[60px] md:rounded-tr-[30px] sm:rounded-tr-[30px] rounded-b-lg"> 
+                <img class="w-full lg:h-72 sm:h-36 object-cover rounded-tl-lg lg:rounded-tr-[60px] rounded-b-lg opacity-50 md:rounded-tr-[30px] sm:rounded-tr-[30px]" src="/icons/drinks/drink1.png" >
+            </div>
             <!-- Text and Buttons Above Image -->
             <div class="absolute top-0 left-8 h-full flex flex-col justify-center p-4">
                 <h2 class="text-white text-2xl font-tenor mb-4">You can Now shop what you want</h2>

@@ -4,10 +4,10 @@
             <div class="bg-primary-blue w-full h-44 top-2 -left-2 rounded-md absolute z-[-1]"></div>   
             <img src="/icons/drinks/drink3.png" alt="" class="w-full h-44 object-cover rounded-md">  
             <div class="flex justify-between my-3">
-                <h3 class="font-tenor text-xlarge text-secondery">{{ title }}</h3>
+                <h3 class="font-tenor text-xl text-secondery">{{ title }}</h3>
                 <div class="flex">
-                    <img src="/icons/shopping.png" alt="" class="bg-secondery rounded-lg w-6 h-6 p-1 m-1">
-                    <img src="/icons/search.png" alt="" class="bg-primary-blue rounded-lg w-6 h-6 p-1 m-1">
+                    <img src="/icons/shopping.png" alt="" class="bg-secondery rounded-lg w-7 h-7 p-1 m-1">
+                    <img src="/icons/search.png" alt="" class="bg-primary-blue rounded-lg w-7 h-7 p-1 m-1">
                 </div>
             </div>
         </div>
