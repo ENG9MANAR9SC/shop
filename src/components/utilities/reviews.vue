@@ -6,10 +6,10 @@
                     <h3 class="text-base text-secondery font-tenor font-bold">2-16-2023</h3>
                 </div>
                 <div class="flex">
-                    <img src="/icons/quate.png" alt="" class="w-8 h-auto">
-                    <h3 class="font-tenor text-xl text-secondery my-2">{{ title }}</h3>
+                    <img src="/icons/quate.png" alt="" class="px-2 ">
+                    <h3 class="h-sec my-2">{{ title }}</h3>
                 </div>
-                <div class="text-lg text-primary font-tenor mb-4">{{ description }}</div>
+                <div class="h-description mb-4">{{ description }}</div>
                 <RouterLink to="" class="text-primary font-tenor font-bold"></RouterLink>
             </div>
         </div>

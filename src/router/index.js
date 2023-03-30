@@ -32,7 +32,7 @@ const router = createRouter({
     {
       path: '/brands',
       name: 'brands',
-      component: () => import('../components/utilities/brands.vue')
+      component: () => import('../components/utilities/services.vue')
     },
     {
       path: '/blog',

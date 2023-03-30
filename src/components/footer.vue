@@ -63,7 +63,7 @@
             <!-- Line -->
             <div class="width-full h-0.5 bg-secondery my-2"></div>
             <!-- 2023 -->
-            <div class="flex justify-between text-base font-tenor text-primary">
+            <div class="flex justify-between text-base font-tenor text-primary p-1">
                 <div>All Reserved by Company 2023</div>
                 <div>Gold Light</div>
             </div>

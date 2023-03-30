@@ -2,12 +2,12 @@
     <div class="">
         <div class="c-container relative">
             <!-- Banner Image alt="Banner Image"-->
-            <div class="bg-black rounded-tl-lg lg:rounded-tr-[60px] md:rounded-tr-[30px] sm:rounded-tr-[30px] rounded-b-lg"> 
-                <img class="w-full lg:h-72 sm:h-36 object-cover rounded-tl-lg lg:rounded-tr-[60px] rounded-b-lg opacity-50 md:rounded-tr-[30px] sm:rounded-tr-[30px]" src="/icons/drinks/drink1.png" >
+            <div class="bg-black rounded-tl-lg lg:rounded-tr-[60px] md:rounded-tr-[20px] rounded-b-lg"> 
+                <img class="w-full h-72 md:h-36 sm:h-32 md:-mx-4 object-cover rounded-tl-lg lg:rounded-tr-[60px] rounded-b-lg opacity-50 md:rounded-tr-[20px] sm:rounded-tr-[20px]" src="/icons/drinks/drink1.png" >
             </div>
             <!-- Text and Buttons Above Image -->
             <div class="absolute top-0 left-8 h-full flex flex-col justify-center p-4">
-                <h2 class="text-white text-2xl font-tenor mb-4">You can Now shop what you want</h2>
+                <h2 class="text-white text-xl  sm:text-2xl font-tenor mb-4">You can Now shop what you want</h2>
                 <RouterLink to="/product">
                     <button class="bg-secondery text-white py-2 px-2 rounded-md shadow-md hover:shadow-lg transition duration-300 w-36">Shop Now</button>
                 </RouterLink>
@@ -17,11 +17,13 @@
         <div class=" relative mt-16 mb-8">
             <div class="c-container">
                     <h2 class="h-header">Categories</h2>
-                    <div class="flex flex-wrap justify-between gap-2">
-                        <category v-for="category in categories" :key="category.title" :title="category.title" :description="category.description" :image="category.image" class="lg:w-1/5 md:w-1/3 sm:w-1/2"/>
+                    <div class="flex flex-wrap justify-between">
+                        <div v-for="category in categories" class="lg:w-1/4 md:w-1/3 sm:w-1/2">
+                            <category :key="category.title" :title="category.title" :description="category.description" :image="category.image" class="mx-2"/>
+                        </div>
                     </div>
             </div>
-            <div class="absolute bg-primary-rose lg:h-40 md:h-60 sm:h-60 w-11/12  top-1/2 rounded-tr-[60px] rounded-br-lg z-[-1]"></div>
+            <div class="absolute bg-primary-rose opacity-30 lg:h-40 md:h-28 h-12 xl:w-11/12 w-full md:w-full lg:top-1/2 md:top-1/3 top-64 rounded-tr-[60px] rounded-br-lg z-[-2]"></div>
         </div>
 
         <div class="flex justify-center mt-8">
@@ -31,21 +33,25 @@
         <div class=" relative mt-16 mb-8">
             <div class="c-container">
                     <h2 class="h-header">New Products</h2>
-                    <div class="flex flex-wrap justify-between gap-2">
-                        <cardnew v-for="cardnew in cardnews" :key="cardnew.title" :title="cardnew.title" :image="cardnew.image" class="lg:w-1/5 md:w-1/3 sm:w-1/2"/>
+                    <div class="flex flex-wrap justify-between">
+                        <div v-for="cardnew in cardnews" class="lg:w-1/4 md:w-1/3 sm:w-1/2">
+                            <cardnew  :key="cardnew.title" :title="cardnew.title" :image="cardnew.image" class="mx-2"/>
+                        </div>
                     </div>
             </div>
-            <div class="absolute bg-primary-blue opacity-30 h-40 w-11/12 top-1/2 rounded-tr-[60px] rounded-br-lg z-[-2]"></div>
+            <div class="absolute bg-primary-blue opacity-30 lg:h-40 md:h-28 h-12 xl:w-11/12 w-full md:w-full lg:top-1/2 md:top-1/3 top-64 rounded-tr-[60px] rounded-br-lg z-[-2]"></div>
         </div>
         <!-- Best Products -->
         <div class=" relative mt-16 mb-8">
             <div class="c-container">
                     <h2 class="h-header">Best Products</h2>
-                    <div class="flex flex-wrap justify-between gap-2">
-                        <cardnew v-for="cardnew in cardnews" :key="cardnew.title" :title="cardnew.title"  :image="cardnew.image" class="lg:w-1/5 md:w-1/3 sm:w-1/2"/>
+                    <div class="flex flex-wrap justify-between">
+                        <div v-for="cardnew in cardnews" class="lg:w-1/4 md:w-1/3 sm:w-1/2">
+                        <cardnew :key="cardnew.title" :title="cardnew.title"  :image="cardnew.image" class="mx-2"/>
+                        </div>
                     </div>
             </div>
-             <div class="absolute bg-primary-orange opacity-30 h-40 w-11/12 top-1/2 rounded-tr-[60px] rounded-br-lg z-[-2]"></div>
+             <div class="absolute bg-primary-orange opacity-30 h-40  lg:h-40 md:h-28 h-12 xl:w-11/12 w-full md:w-full lg:top-1/2 md:top-1/3 top-64 rounded-tr-[60px] rounded-br-lg z-[-2]"></div>
         </div>
        
     </div>

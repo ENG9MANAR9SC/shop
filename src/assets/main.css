@@ -9,10 +9,13 @@
     @apply  text-secondery border border-secondery px-4 py-2 rounded-[30px] font-tenor;
 }
 .h-header {
-    @apply text-2xl text-secondery font-philosopher font-bold;
+    @apply sm:text-2xl text-xl  text-secondery font-philosopher font-bold;
 }
 .h-sec {
-    @apply text-xl text-secondery font-philosopher font-bold;
+    @apply sm:text-xl text-lg text-secondery font-philosopher font-bold;
+}
+.h-description {
+    @apply sm:text-lg text-base text-primary font-tenor;
 }
 .custom-round {
     @apply rounded-l-[10px] rounded-tl-[10px] rounded-tr-[60px];

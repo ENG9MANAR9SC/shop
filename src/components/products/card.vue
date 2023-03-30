@@ -9,7 +9,7 @@
                     <span class="mx-2 text-xl text-secondery">48$</span>
                     <span class="mx-2 text-base text-primary line-through my-2">66$</span>
                 </div>
-                <button class="btn-secondery">Add to Cart</button>
+                <button class="btn-secondery w-full">Add to Cart</button>
             </div>
         </div>
     </div>
