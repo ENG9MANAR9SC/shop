@@ -4,7 +4,7 @@
             <img src="/icons/drinks/drink3.png" alt="drink" class="w-full h-40 object-cover rounded-t-[30px]">
             <h2 class="h-sec px-2 my-2">{{ title }}</h2>
             <div class="text-base text-primary font-tenor px-2 overflow-hidden text-ellipsis h-48 my-2">{{ description }}</div>
-            <RouterLink to="/product"><button class="bg-secondery text-white px-4 py-2 rounded-full w-full font-tenor ">Shop Now</button></RouterLink>
+            <RouterLink to="/product" class="btn">Shop Now</RouterLink>
         </div>
     </div>
 </template>

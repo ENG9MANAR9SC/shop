@@ -36,7 +36,7 @@
             </div>
         </div>
 
-        <button class="btn flex justify-center">Check out</button>
+        <RouterLink to="" class="btn flex justify-center">Check out</RouterLink>
       
     </div>
   </template>

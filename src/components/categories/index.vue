@@ -51,7 +51,7 @@
                         </div>
                     </div>
             </div>
-             <div class="absolute bg-primary-orange opacity-30 h-40  lg:h-40 md:h-28 h-12 xl:w-11/12 w-full md:w-full lg:top-1/2 md:top-1/3 top-64 rounded-tr-[60px] rounded-br-lg z-[-2]"></div>
+             <div class="absolute bg-primary-orange opacity-30 lg:h-40 md:h-28 h-12 xl:w-11/12 w-full md:w-full lg:top-1/2 md:top-1/3 top-64 rounded-tr-[60px] rounded-br-lg z-[-2]"></div>
         </div>
        
     </div>

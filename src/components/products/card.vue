@@ -9,19 +9,22 @@
                     <span class="mx-2 text-xl text-secondery">48$</span>
                     <span class="mx-2 text-base text-primary line-through my-2">66$</span>
                 </div>
-                <button class="btn-secondery w-full">Add to Cart</button>
+                <RouterLink to="" class="btn-secondery w-full">Add to Cart</RouterLink>
             </div>
         </div>
     </div>
 </template>
 
 <script>
+import { RouterLink } from 'vue-router';
+
 export default {
-  name: "product",
-  props: {
-    title: String,
-    description: String,
-   /*  image: String,  */
-  },
+    name: "product",
+    props: {
+        title: String,
+        description: String,
+        /*  image: String,  */
+    },
+    components: { RouterLink }
 };
 </script>
