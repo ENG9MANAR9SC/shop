@@ -3,7 +3,7 @@
 <template>
     <div class="flex flex-col min-h-screen">
         <CustomHeader></CustomHeader>
-        <main class="bg-primary-blue/10 pt-16">
+        <main class="bg-primary-blue/10">
              <RouterView />
         </main>
         <CustomFooter class="mt-auto"></CustomFooter>

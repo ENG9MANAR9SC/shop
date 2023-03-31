@@ -1,21 +1,33 @@
 <template>
-    <div class="mt-8">
-        <img src="/icons/drinks/drink1.png" alt="" class="h-36 w-full object-cover">
-        <h2 class="h-sec px-2 my-2"> </h2>
-        <div class="flex justify-between">
-            <div class="flex m-1">
-                <img src="/icons/comment.png" alt="" class="w-10 p-2">
-                <span class="text-lg font-tenor font-bold text-secondery py-2">Comments</span>
-            </div>
-            <div class="flex m-1">
-                <img src="/icons/views.png" alt="" class="w-10 p-2">
-                <span class="text-lg font-tenor font-bold text-secondery py-2">Views</span>
+    <div class="mt-8 mb-4">
+        <div class="pb-0.5 rounded-[20px] max-w-sm bg-gradient-to-r custom-bgcolor">
+            <div class="rounded-[20px] bg-white pb-3">
+                <div class="relative">
+                    <div class="bg-black rounded-[20px]"> 
+                        <img src="/icons/drinks/drink1.png" alt="" class="h-44 w-full object-cover rounded-[20px] opacity-80">
+                    </div>
+                    <h2 class="h-sec px-4 text-white absolute top-3/4">Post Story </h2>
+                </div>
+                <div>
+                    <div class="flex justify-between p-3">
+                        <div class="flex m-1">
+                            <img src="/icons/comment.png" alt="" class="w-10 p-1">
+                            <span class="text-base font-tenor font-bold text-secondery py-2 mx-2">14</span>
+                        </div>
+                        <div class="flex m-1">
+                            <img src="/icons/views.png" alt="" class="w-10 p-1">
+                            <span class="text-base font-tenor font-bold text-secondery py-2 mx-2">26</span>
+                        </div>
+                    </div>
+                    <div class="h-description m-4 text-base">
+                        {{ description }} industries and publishing industries used in the graphic, print, and publishing industri 
+                    </div>
+                    <div class="flex w-full ">
+                        <RouterLink to="/product" class="btn text-base font-bold">See More</RouterLink>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="h-description mx-2 my-3">
-            {{ description }} and publishing industries used in the graphic, print, and publishing industries 
-        </div>
-        <RouterLink to="/product" class="btn w-1/2">See More</RouterLink>
     </div>
 </template>
 

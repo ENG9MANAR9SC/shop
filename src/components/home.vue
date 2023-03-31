@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="">
         <div class="c-container relative">
             <!-- Banner Image alt="Banner Image"-->
             <div class="bg-black rounded-tl-lg rounded-tr-[60px] rounded-b-lg"> 
@@ -18,7 +18,7 @@
             <div class="c-container">
                     <h2 class="h-header">Categories</h2>
                     <div class="flex flex-wrap justify-between">
-                        <div v-for="(category , index) in categories" class="lg:w-1/4 md:w-1/3 sm:w-1/2"><!--  class="item-card" @click="activateCard(index)" :class="{ 'active': activeIndex === index }" -->
+                        <div v-for="(category , index) in categories" class="responsivefour"><!--  class="item-card" @click="activateCard(index)" :class="{ 'active': activeIndex === index }" -->
                             <category :key="index" :title="category.title" :description="category.description" :image="category.image" class="mx-2 item-card"  @click="activateCard(index)" :class="{ 'active': activeIndex === index }" :style="{ 'animation-name': activeIndex === index ? 'bounce' : '' }"/>
                         </div>
                     </div>
@@ -26,11 +26,11 @@
             <div class="absolute bg-primary-rose opacity-30 lg:h-40 md:h-28 h-12 xl:w-11/12 w-full md:w-full lg:top-1/2 md:top-1/3 top-64 rounded-tr-[60px] rounded-br-lg z-[-2]"></div>
         </div>
          <!-- New Products -->
-    <div class=" relative mt-16 mb-8">
+        <div class=" relative mt-16 mb-8">
             <div class="c-container">
                     <h2 class="h-header">New Products</h2>
                     <div class="flex flex-wrap justify-between">
-                        <div v-for="cardnew in cardnews" class="lg:w-1/4 md:w-1/3 sm:w-1/2">
+                        <div v-for="cardnew in cardnews" class="responsivefour">
                             <cardnew :key="cardnew.title" :title="cardnew.title" :image="cardnew.image" class="mx-2"/>
                         </div>
                     </div>
@@ -42,7 +42,7 @@
             <div class="c-container">
                     <h2 class="h-header">Best Products</h2>
                     <div class="flex flex-wrap justify-between">
-                        <div v-for="cardnew in cardnews" class="lg:w-1/4 md:w-1/3 sm:w-1/2">
+                        <div v-for="cardnew in cardnews" class="responsivefour">
                             <cardnew  :key="cardnew.title" :title="cardnew.title"  :image="cardnew.image" class="mx-2"/>
                         </div>
                     </div>

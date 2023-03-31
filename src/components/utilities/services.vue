@@ -14,12 +14,7 @@ export default {
     description: String,
    /*  image: String,  */
   },
-  methods: {
-            addClass: function(index) {
-                this.isAddClass = true;
-                isAddClass != isAddClass;
-        }  
-    },  
+ 
 };
 </script>
 

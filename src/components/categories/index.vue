@@ -2,8 +2,8 @@
     <div class="">
         <div class="c-container relative">
             <!-- Banner Image alt="Banner Image"-->
-            <div class="bg-black rounded-tl-lg lg:rounded-tr-[60px] md:rounded-tr-[20px] rounded-b-lg"> 
-                <img class="w-full h-72 md:h-36 sm:h-32 md:-mx-4 object-cover rounded-tl-lg lg:rounded-tr-[60px] rounded-b-lg opacity-50 md:rounded-tr-[20px] sm:rounded-tr-[20px]" src="/icons/drinks/drink1.png" >
+            <div class="bg-black rounded-tl-lg lg:rounded-tr-[60px] md:rounded-tr-[20px] sm:rounded-tr-[20px] rounded-b-lg"> 
+                <img class="w-full h-72 object-cover rounded-tl-lg lg:rounded-tr-[60px] rounded-b-lg opacity-50 md:rounded-tr-[20px] sm:rounded-tr-[20px]" src="/icons/drinks/drink1.png" >
             </div>
             <!-- Text and Buttons Above Image -->
             <div class="absolute top-0 left-8 h-full flex flex-col justify-center p-4">
@@ -34,7 +34,7 @@
             <div class="c-container">
                     <h2 class="h-header">New Products</h2>
                     <div class="flex flex-wrap justify-between">
-                        <div v-for="cardnew in cardnews" class="lg:w-1/4 md:w-1/3 sm:w-1/2">
+                        <div v-for="cardnew in cardnews" class="responsivefour">
                             <cardnew  :key="cardnew.title" :title="cardnew.title" :image="cardnew.image" class="mx-2"/>
                         </div>
                     </div>
@@ -46,7 +46,7 @@
             <div class="c-container">
                     <h2 class="h-header">Best Products</h2>
                     <div class="flex flex-wrap justify-between">
-                        <div v-for="cardnew in cardnews" class="lg:w-1/4 md:w-1/3 sm:w-1/2">
+                        <div v-for="cardnew in cardnews" class="responsivefour">
                         <cardnew :key="cardnew.title" :title="cardnew.title"  :image="cardnew.image" class="mx-2"/>
                         </div>
                     </div>
