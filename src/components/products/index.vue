@@ -29,17 +29,21 @@
         <div class="">
             <button class="text-white px-8 py-2 rounded-[30px] font-tenor mt-8 bg-gradient-to-r custom-bgcolor"> All</button>
         </div>
-        <div class="flex flex-wrap justify-between gap-2 mb-8">
-            <product v-for="product in products" :key="product.title" :title="product.title" :description="product.description" :image="product.image" class="lg:w-1/5 md:w-1/3 sm:w-1/2"/>
+        <div class="flex flex-wrap justify-between mb-8">
+            <div v-for="product in products" class="responsivefour">
+                <product :key="product.title" :product="product" class="mx-2"/>
+            </div>
         </div>
     </div>
     <!-- New Products -->
     <div class=" relative mt-16 mb-8">
             <div class="c-container">
-                    <h2 class="h-header">New Products</h2>
-                    <div class="flex flex-wrap justify-between gap-2">
-                        <cardnew v-for="cardnew in cardnews" :key="cardnew.title" :title="cardnew.title" :image="cardnew.image" class="lg:w-1/5 md:w-1/3 sm:w-1/2"/>
+                <h2 class="h-header">New Products</h2>
+                <div class="flex flex-wrap justify-between">
+                    <div v-for="product in products" class="responsivefour">
+                        <cardnew :key="product.title" :product="product" />
                     </div>
+                </div>
             </div>
             <div class="absolute bg-primary-blue opacity-30 h-40 w-11/12 top-1/2 rounded-tr-[60px] rounded-br-lg z-[-2]"></div>
         </div>
@@ -47,9 +51,9 @@
         <div class=" relative mt-16 mb-8">
             <div class="c-container">
                     <h2 class="h-header ">Best Products</h2>
-                    <div class="flex flex-wrap justify-between gap-2">
-                        <div v-for="cardnew in cardnews" class="responsivefour">
-                            <cardnew :key="cardnew.title" :title="cardnew.title"  :image="cardnew.image" />
+                    <div class="flex flex-wrap justify-between">
+                        <div v-for="product in products" class="responsivefour">
+                            <cardnew :key="product.title" :product="product" />
                         </div>
                     </div>
             </div>
@@ -69,26 +73,34 @@ export default {
                 {
                     title:"Carrots",
                     image: "../icons/drinks/drink1.png",
-                    description:"graphic, print, and industries for previewing layouts and visual mockups layouts visual mockups",
+                    description:"graphic, and visual mockups layouts visual mockups",
+                    price:'20',
+                    quantity: 1,
                 },
                 {
                     title:"PineApple",
                     image: "../icons/drinks/drink2.png",
-                    description:"graphic, print, and industries for and visual mockups layouts visual mockups",
+                    description:"graphic, print, and industries for and visual mockups layouts visual mockups graphic, print, and industries for and visual mockups layouts visual mockup",
+                    price:'20',
+                    quantity: 1,               
                 },
                 {
                     title:"Orange",
                     image: "../icons/drinks/drink3.png",
-                    description:"industries for previewing layouts and visual mockups layouts visual mockups",
+                    description:"industries for previewing layouts and visual mockups layouts visual mockups graphic, print, and industries for and visual mockups layouts visual mockup",
+                    price:'20',
+                    quantity: 1,
                 },
                 {
                     title:"Orange",
                     image: "../icons/drinks/drink3.png",
                     description:"graphic, print, and industries for previewing layouts and visual mockups layouts visua",
+                    price:'20',
+                    quantity: 1,             
                 },
 
         ],
-        cardnews: [
+     /*    cardnews: [
                 {
                     title:"Carrots",
                     image: "/icons/drinks/drink1.png",
@@ -105,7 +117,7 @@ export default {
                     title:"Carrots",
                     image: "/icons/drinks/drink4.png",
                 }
-        ],
+        ], */
            }
         },
         

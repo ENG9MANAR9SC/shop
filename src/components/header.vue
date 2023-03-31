@@ -52,6 +52,7 @@
                     </nav>
 
                     <div class="flex gap-2">
+                        {{ cart.cQuantity }}
                         <img src="/icons/searchead.png" alt="" class="w-8 h-8 p-1" >
                         <RouterLink to="/cart"><img src="/icons/shophead.png" alt="" class="w-8 h-8 p-1" ></RouterLink>
                     </div>
@@ -86,4 +87,11 @@ export default{
   },
 
 }
+</script>
+
+<script setup>
+import { CartStore } from '../stores/counter'
+
+const cart = CartStore()
+
 </script>

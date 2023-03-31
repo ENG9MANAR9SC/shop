@@ -6,12 +6,12 @@
         </div>
 
         <div class="flex flex-wrap ">
-            <div  v-for="product in cart" :key="product.id" class="m-2">
-                <img src="icons/drinks/drink1.png" alt="" class="w-full h-44 object-cover rounded-t-lg">
+            <div  v-for="product in cart.getProducts" :key="product.title" class="m-2">
+                <img :src="product?.image" alt="" class="w-full h-44 object-cover rounded-t-lg">
                 <div class="custom-bgcolor p-0.5 rounded-lg mt-2">
                     <div class="bg-white px-2 rounded-lg">
                         <div class="p-2">
-                            <h3 class="text-xl text-secondery font-philosopher font-bold my-2">{{ product.name }}</h3>
+                            <h3 class="text-xl text-secondery font-philosopher font-bold my-2">{{ product.title}}</h3>
                             <div class="my-3 text-lg ">
                                 <span>Price:</span>
                                 <span class="mx-3">{{ product.price }}</span>
@@ -33,9 +33,9 @@
                 </div>
             </div>
         </div>
-        <div class="flex justify-center m-4">
+   <!--      <div class="flex justify-center m-4">
             <RouterLink to="" class="btn w-1/4 m-2">Check out ( {{ cart.reduce((acc, p) => acc + (p.price * p.quantity), 0) }}$ )</RouterLink>
-        </div>
+        </div> -->
     </div>
   </template>
   
@@ -43,7 +43,7 @@
   export default {
     data() {
       return {
-        cart:[
+      /*   cart:[
             {
                 id:'1',
                 namme:'carrots',
@@ -75,18 +75,18 @@
                 quantity:'4',
             },
 
-        ],
-        
+        ], */
+
         
       }
-      
-    
+ 
     },
-    methods: {
-      addToCart(product) {
-        this.cart.push(product)
-      },
-  
-    }
   }
   </script>
+
+<script setup>
+import { CartStore } from '../../stores/counter'
+
+const cart = CartStore()
+
+</script>
