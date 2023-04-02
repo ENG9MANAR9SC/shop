@@ -30,8 +30,8 @@
             <div class="c-container">
                     <h2 class="h-header">New Products</h2>
                     <div class="flex flex-wrap justify-between">
-                        <div v-for="cardnew in cardnews" class="responsivefour">
-                            <cardnew :key="cardnew.title" :title="cardnew.title" :image="cardnew.image" class="mx-2"/>
+                      <div v-for="product in products" class="responsivefour">
+                            <cardnew :key="product.title" :product="product" />
                         </div>
                     </div>
             </div>
@@ -42,8 +42,8 @@
             <div class="c-container">
                     <h2 class="h-header">Best Products</h2>
                     <div class="flex flex-wrap justify-between">
-                        <div v-for="cardnew in cardnews" class="responsivefour">
-                            <cardnew  :key="cardnew.title" :title="cardnew.title"  :image="cardnew.image" class="mx-2"/>
+                      <div v-for="product in products" class="responsivefour">
+                            <cardnew :key="product.title" :product="product" />
                         </div>
                     </div>
             </div>
@@ -126,7 +126,7 @@ export default {
           image: "../icons/drinks/drink4.png",
         },
         ], 
-        cardnews: [
+        products: [
                 {
                     title:"Carrots",
                     image: "/icons/drinks/drink1.png",

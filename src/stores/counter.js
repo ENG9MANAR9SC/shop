@@ -25,11 +25,20 @@ export const CartStore = defineStore('cart', {
 
       destroyCart() {
         // TODO: 
+        delete this.products;
+        delete this.cQuantity;
+  
       },
 
       removeProductFromCart(slug) {
         // TODO: 
         // HINT: use array.filter
+        //array.filter(function(currentValue, index, arr), thisValue)
+        //this.products.filter(function(slug));
+        delete this.products[slug];
+        this.products.quantity[slug] == 0;
+        
+
       }
 
 

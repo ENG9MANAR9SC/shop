@@ -1,12 +1,12 @@
 <template>
     <div class="c-container cart">
-            <div class="flex items-center">
-                <h2 class="h-header mb-6">Your Orders</h2>
-                <div class="bg-secondery h-[1px] w-3/4 mx-4"></div>
+        <div class="flex items-center">
+            <h2 class="h-header mb-6">Your Orders</h2>
+            <div class="bg-secondery h-[1px] w-3/4 mx-4"></div>
         </div>
 
         <div class="flex flex-wrap ">
-            <div  v-for="product in cart.getProducts" :key="product.title" class="m-2">
+            <div  v-for="product in cart.getProducts" :key="product.id" class="m-2">
                 <img :src="product?.image" alt="" class="w-full h-44 object-cover rounded-t-lg">
                 <div class="custom-bgcolor p-0.5 rounded-lg mt-2">
                     <div class="bg-white px-2 rounded-lg">
@@ -27,15 +27,19 @@
                             <div class="flex justify-between text-tenor text-lg text-white bg-secondery p-3 rounded-b-lg -mx-2">
                                 <span>Total</span>
                                 <span>{{ product.quantity * product.price }}$</span>
+                                <span @click="cart.removeProductFromCart(product.id)"> delete element</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-   <!--      <div class="flex justify-center m-4">
+        <div>
+            <button @click="cart.destroyCart">delete</button>
+        </div>
+    <!--      <div class="flex justify-center m-4">
             <RouterLink to="" class="btn w-1/4 m-2">Check out ( {{ cart.reduce((acc, p) => acc + (p.price * p.quantity), 0) }}$ )</RouterLink>
-        </div> -->
+        </div>  -->
     </div>
   </template>
   
