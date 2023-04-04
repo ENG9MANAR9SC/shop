@@ -31,7 +31,7 @@
 
         <div class="mt-16 mb-8">
             <div class="c-container">
-                <h2 class="h-header">Resent Blogs</h2>
+                <h2 class="h-header">Recent Blogs</h2>
                 <div class="flex flex-wrap justify-between">
                     <div v-for="card in cards" class="responsivefour">
                     <card :key="card.title" :title="card.title" :image="card.image" class="mx-4"/>

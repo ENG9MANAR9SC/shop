@@ -51,10 +51,10 @@
                         </div>
                     </nav>
 
-                    <div class="flex gap-2">
-                        {{ cart.cQuantity }}
-                        <img src="/icons/searchead.png" alt="" class="w-8 h-8 p-1" >
+                    <div class="flex gap-3 items-center">
+                        <search> </search>
                         <RouterLink to="/cart"><img src="/icons/shophead.png" alt="" class="w-8 h-8 p-1" ></RouterLink>
+                        <div>{{ cart.cQuantity }}</div>
                     </div>
 
                 </div>
@@ -65,11 +65,12 @@
 </template>
 <script>
 import { ref } from 'vue';
-
+import search from './utilities/search.vue'
 import dropdown from "./utilities/lang-dropdown.vue"
 export default{
        components: {
         dropdown,
+        search,
     },
     setup() {
     const showMenu = ref(false);
