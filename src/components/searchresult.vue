@@ -2,7 +2,8 @@
     <div class="c-container">
         {{ searchKey }}
         {{ products }}
-        <div v-if="searchKey=products.title">
+        {{ products}}
+        <div>
           ggogogogogog
         </div>
     </div>
