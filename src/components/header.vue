@@ -2,9 +2,9 @@
     <header>
         <div class="">
             <div class="h-8 bg-primary">
-                <div class="c-container flex justify-between text-white">
+                <div class="c-container flex justify-between items-center text-white">
                     <div class="flex">
-                        <img src="/icons/socialmedia/call.png" alt="" class="h-6 w-6 mx-1 mt-1">
+                        <img src="/icons/socialmedia/call.png" alt="" class="h-6 w-6 mx-1">
                         <span>+964 847 857</span>
                     </div>
 
