@@ -28,6 +28,7 @@
                                 <span>Total</span>
                                 <span>{{ product.quantity * product.price }}$</span>
                                 <span @click="cart.removeProductFromCart(product.id)"> delete element</span>
+                                <!-- <button @click="cart.updateProductQuntity(product,15)">update</button> -->
                             </div>
                         </div>
                     </div>
@@ -36,6 +37,7 @@
         </div>
         <div>
             <button @click="cart.destroyCart">delete</button>
+           
         </div>
     <!--      <div class="flex justify-center m-4">
             <RouterLink to="" class="btn w-1/4 m-2">Check out ( {{ cart.reduce((acc, p) => acc + (p.price * p.quantity), 0) }}$ )</RouterLink>

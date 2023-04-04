@@ -1,5 +1,5 @@
 <template>
-        <div class="">
+    <div class="">
         <div class="mt-8 p-0.5 pt-0 pb-0  custom-bgcolor rounded-[30px]">
             <div class="bg-white rounded-[30px] p-4">
                 <div class="flex justify-end -mt-8">

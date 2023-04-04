@@ -1,5 +1,5 @@
 <template>
-    <div class="">
+    <div class="pt-4">
         <div class="c-container relative">
             <!-- Banner Image alt="Banner Image"-->
             <div class="bg-black rounded-tl-lg lg:rounded-tr-[60px] md:rounded-tr-[20px] sm:rounded-tr-[20px] rounded-b-lg"> 
@@ -18,7 +18,7 @@
             <div class="c-container">
                     <h2 class="h-header">Categories</h2>
                     <div class="flex flex-wrap justify-between">
-                        <div v-for="category in categories" class="lg:w-1/4 md:w-1/3 sm:w-1/2">
+                        <div v-for="category in categories" class="responsivefour">
                             <category :key="category.title" :title="category.title" :description="category.description" :image="category.image" class="mx-2"/>
                         </div>
                     </div>

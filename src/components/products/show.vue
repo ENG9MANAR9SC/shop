@@ -1,10 +1,10 @@
 <template>
     <div class="c-container">
-        <h1 class="h-header">Product Name</h1>
+        <h1 class="h-header">{{ product.title}}</h1>
         <div class="flex">
             <div>
-                <div>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and</div>
-                <div>price</div>
+                <div>{{ product?.description }} </div>
+                <div>{{ product?.price }}$</div>
                 <div>color</div>
                 <div>
                     <button class="btn">Buy Now</button>
@@ -70,4 +70,11 @@ export default {
 }
 
 }
+</script>
+
+<script setup>
+import { CartStore } from '../../stores/counter'
+
+const cart = CartStore()
+
 </script>
