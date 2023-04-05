@@ -94,14 +94,25 @@
                     <div>
                         <div class="mt-4 p-0.5 w-full custom-round custom-bgcolor">
                             
-                            <div class="bg-white custom-round p-8">
-                              <h3 class="font-philosopher text-2xl font-bold text-secondery my-3">Location</h3>  
+                           <!--  <div class="bg-white custom-round p-4">
+                              <h3 class="font-philosopher text-2xl font-bold text-secondery my-4">Location</h3>  
                                 <MapboxMap
                                     style="height: 400px"
-                                    access-token="..."
+                                    access-token="pk.eyJ1IjoiaGF0ZW1tYXppZCIsImEiOiJjbGRhbmVqdzgwNTI1M3BuY2ZxeDV2Z2g0In0.Z8Zvo1K29Uwkpmopvt_TxA"
                                     map-style="mapbox://styles/mapbox/streets-v11"
                                     :center="[0, 0]"
                                     :zoom="1" />
+                            </div> -->
+                            <div  class="w-full ">
+                                <MapboxMap
+                                    class="w-full aspect-video relative"
+                                    access-token="pk.eyJ1IjoiaGF0ZW1tYXppZCIsImEiOiJjbGRhbmVqdzgwNTI1M3BuY2ZxeDV2Z2g0In0.Z8Zvo1K29Uwkpmopvt_TxA"
+                                    map-style="mapbox://styles/hatemmazid/cleg0cnn6002301kg9f3y6icc"
+                                    :center="[2, 2]"
+                                    :zoom="14"
+                                    @mb-created="(mapInstance) => map = mapInstance"
+                                >
+                                </MapboxMap>
                             </div>
                         </div>
                     </div>
@@ -120,9 +131,7 @@ export default {
       fullName: '',
       email: '',
       message: '',
-      showMap: true,
-        c_zoom: 16,
-        map: null,
+
     }
   },
   methods: {

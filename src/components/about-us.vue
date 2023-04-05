@@ -1,7 +1,7 @@
 <template>
 <div class="c-container">
     <h2 class="h-header mt-16">Company Name</h2>
-    <div class="flex gap-6">              
+    <div class="flex gap-6 md:flex-row flex-col">              
             <div class="mt-16 mb-8 p-0.5 w-full custom-round custom-bgcolor">
                 <div class="bg-white custom-round p-8">
                     <h3 class="h-sec">Who We are ?</h3>
