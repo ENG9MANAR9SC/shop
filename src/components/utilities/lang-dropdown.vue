@@ -1,5 +1,5 @@
 <template>
-  <div class="relative">
+  <div class="relative z-10">
     <button class="flex items-center space-x-2 px-2 py-[2px] rounded-md text-secondery hover:bg-primary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
       @click="isOpen = !isOpen">
       <img :src="languageIcons[activeLanguage].icon" :alt="languageIcons[activeLanguage].name" class="h-5 w-5" />
@@ -51,6 +51,8 @@ export default {
       selectLanguage(language) {
       this.activeLanguage = language;
       this.isOpen = false;
+      this.$i18n.locale = language;
+      //this.$router.go();
       // Add logic here to change the language of your app
       }
     }

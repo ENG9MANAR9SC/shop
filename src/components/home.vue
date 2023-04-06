@@ -9,7 +9,7 @@
             <div class="absolute top-0 left-8 h-full flex flex-col justify-center p-4">
                 <h2 class="text-white lg:text-2xl text-xl font-tenor mb-3">You can Now shop what you want</h2>
                 <RouterLink to="/product" class="bg-secondery text-white py-2 px-2 text-center rounded-[20px] shadow-md hover:shadow-lg transition duration-300 w-36" >
-                  Shop Now
+                  {{ $t('Home') }}
                 </RouterLink>
             </div>
         </div> 
