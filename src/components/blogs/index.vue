@@ -1,7 +1,7 @@
 <template>
     <div class="">
        <!-- BANNER  -->
-       <div class="h-[350px] relative flex items-center overflow-hidden mt-8">
+       <div class=" md:h-80 h-48 relative flex items-center overflow-hidden mt-8">
             <!-- Banner Image alt="Banner Image"-->
             <!-- <div class="relative rounded-tl-lg z-0 rounded-tr-[60px] rounded-b-lg">  -->
             <div class="bg-black z-0"> 
@@ -11,7 +11,7 @@
             <!-- Text and Buttons Above Image -->
             <div class=" z-10 relative c-container">
                 <!-- absolute top-6 left-8 h-1/3 -->
-                <div class="p-4 ">
+                <div class="p-4 mx-4">
                     <h2 class="h-header z-10 -mx-8">Blogs</h2>
                     <div class="text-secondery bg-white p-2 px-12 rounded-[20px]"> is dummy text used in laying out print, graphic or web </div>
                 </div>

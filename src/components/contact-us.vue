@@ -6,11 +6,11 @@
                         <div class="bg-white custom-round p-8">
                             <h2 class="h-header text-2xl mb-4"> Contact Us</h2>
                             <form class="w-full" @submit.prevent="submitForm">
-                                <div class="flex gap-4">
-                                    <div class="flex my-4 w-1/2">
-                                        <label class="text-primary font-tenor text-xl mx-4" for="full-name"> FullName</label>
+                                <div class="flex gap-4 flex-col md:flex-row">
+                                    <div class="my-4 w-full">
+                                        <label class="text-primary font-tenor text-xl" for="full-name"> FullName</label>
                                         <input
-                                            class="appearance-none border rounded-xl border-secondery w-full py-2 px-3 text-primary leading-tight focus:outline-none focus:shadow-outline"
+                                            class="appearance-none border rounded-xl border-secondery w-full py-3 px-3 text-primary leading-tight focus:outline-none focus:shadow-outline"
                                             id="full-name"
                                             type="text"
                                             placeholder="Manar kheir"
@@ -19,12 +19,12 @@
                                         />
                                     </div>
 
-                                    <div class="flex my-4 w-1/2">
-                                        <label class="text-primary font-tenor text-xl mx-4" for="email">
+                                    <div class="my-4 w-full">
+                                        <label class="text-primary font-tenor text-xl" for="email">
                                             Email
                                         </label>
                                         <input
-                                            class="appearance-none border rounded-xl border-secondery w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                            class="appearance-none border rounded-xl border-secondery w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                                             id="email"
                                             type="email"
                                             placeholder="johndoe@example.com"
@@ -33,10 +33,10 @@
                                         />
                                     </div>
                                 </div>
-                                <div class="flex my-4">
-                                    <label class="text-primary font-tenor text-xl mx-4" for="message">Message </label>
+                                <div class="my-4">
+                                    <label class="text-primary font-tenor text-xl" for="message">Message </label>
                                     <textarea
-                                        class="appearance-none border rounded-xl border-secondery w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                        class="appearance-none border rounded-xl border-secondery w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                                         id="message"
                                         rows="5"
                                         placeholder="Enter your message here"
@@ -45,7 +45,7 @@
                                     ></textarea>
                                 </div>
 
-                                <div class="flex w-1/3 justify-end">
+                                <div class="flex  my-4">
                                     <button
                                         class="btn hover:bg-blue-700 text-white focus:outline-none focus:shadow-outline"
                                         type="submit"
@@ -59,8 +59,8 @@
                 </div>
 
                 <!-- social Media and Location -->
-                <div class="flex mb-8 gap-4">
-                    <div>
+                <div class="flex mb-8 gap-4 flex-col md:flex-row">
+                    <div class="">
                         <div class="mt-4 p-0.5 w-full custom-round custom-bgcolor">
                             <div class="bg-white custom-round p-4">
                                 <div>

@@ -23,7 +23,7 @@
                         {{ description }} industries and publishing industries used in the graphic, print, and publishing industri 
                     </div>
                     <div class="flex w-full px-3">
-                        <RouterLink to="/product" class="btn text-base font-bold">See More</RouterLink>
+                        <RouterLink to="/product" class="btn text-base font-bold w-full">See More</RouterLink>
                     </div>
                 </div>
             </div>

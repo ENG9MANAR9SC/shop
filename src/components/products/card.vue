@@ -2,7 +2,7 @@
     <div class="">
         <div class="mt-8 p-0.5 rounded-[20px] max-w-sm bg-gradient-to-r custom-bgcolor">
             <div class="rounded-[20px] bg-white">
-                <RouterLink to="/" @click=""><img :src="product?.image" alt="" class="rounded-[20px]"></RouterLink>
+                <RouterLink :to="`/product/${product.id}`" @click=""><img :src="product?.image" alt="" class="rounded-[20px]"></RouterLink>
                 <div class="px-2 pb-4">
                     <h3 class="h-sec my-2">{{ product?.title}}</h3>
                     <div class="text-base text-primary font-tenor leading-5 min-h-[calc(3*20px)] my-2 line-clamp-3">{{ product?.description }} </div>

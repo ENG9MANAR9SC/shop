@@ -5,7 +5,7 @@
          </button>
         <input
             class="appearance-none border rounded-xl border-secondery w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-            id="email"
+            id="text"
             type="text"
             placeholder="Search"
             v-model="searchKey"
