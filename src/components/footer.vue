@@ -7,7 +7,7 @@
                     <div class="text-large font-tenor mt-2">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</div>
                 </div>
                 <div>
-                    <h3 class="font-philosopher text-xl font-bold text-secondery">Contact us</h3>
+                    <h3 class="font-philosopher text-xl font-bold text-secondery"> {{ $t('Contact us') }} </h3>
                     <div class="flex my-3">
                         <img src="/icons/socialmedia/location.png" alt="" class="w-6 h-6">
                         <a href="" class="px-3 font-tenor">Erbil,Ankawa Street</a>
@@ -26,7 +26,7 @@
                     </div>
                 </div>
                 <div>
-                    <h3 class="text-xl font-philosopher font-bold text-secondery">Social Media</h3>
+                    <h3 class="text-xl font-philosopher font-bold text-secondery">{{ $t('Social Media') }} </h3>
                     <div class="flex my-3">
                         <img src="/icons/socialmedia/youtube.png" alt="" class="w-6 h-6">
                         <a href="" class="px-3 font-tenor" >Youtube.com</a>
@@ -45,27 +45,27 @@
                     </div>
                 </div>
                 <div class="">
-                    <h3 class="text-xl font-philosopher font-bold text-secondery ">Support</h3>
-                    <div class="my-4 font-tenor"><a href="" class="px-3">FAQs</a></div>
-                    <div class="my-4 font-tenor"><a href="" class="px-3">Terms of Use</a></div>
-                    <div class="my-4 font-tenor"><a href="" class="px-3">Privacy Policy</a></div>
+                    <h3 class="text-xl font-philosopher font-bold text-secondery ">{{ $t('Support') }}  </h3>
+                    <div class="my-4 font-tenor"><a href="" class="px-3">{{ $t('FAQs') }}  </a></div>
+                    <div class="my-4 font-tenor"><a href="" class="px-3">{{ $t('Terms of Use') }}  </a></div>
+                    <div class="my-4 font-tenor"><a href="" class="px-3">{{ $t('Privacy Policy') }}  </a></div>
                 </div>
             </div>
             <!-- list -->
             <div class="flex flex-wrap justify-center text-large font-philosopher font-bold text-secondery mt-4">
-                <a href="" class="mx-2">Home</a>
-                <a href="" class="mx-2">Shop</a>
-                <a href="" class="mx-2">Categories</a>
-                <a href="" class="mx-2">Blogs</a>
-                <a href="" class="mx-2">Contact us</a>
-                <a href="" class="mx-2">About us</a>
+                <a href="" class="mx-2">{{ $t('Home') }}  </a>
+                <a href="" class="mx-2">{{ $t('Shop') }}  </a>
+                <a href="" class="mx-2">{{ $t('Categories') }}  </a>
+                <a href="" class="mx-2">{{ $t('Blog') }}  </a>
+                <a href="" class="mx-2">{{ $t('Contact us') }}  </a>
+                <a href="" class="mx-2">{{ $t('About us') }}  </a>
             </div>
             <!-- Line -->
             <div class="width-full h-0.5 bg-secondery"></div>
             <!-- 2023 -->
             <div class="flex justify-between text-base font-tenor text-primary p-2">
-                <div>All Reserved by Company 2023</div>
-                <div>Gold Light</div>
+                <div>{{ $t('All Reserved by Company 2023') }}  </div>
+                <div>{{ $t('Gold Light') }}  </div>
             </div>
         </div>
     </footer>

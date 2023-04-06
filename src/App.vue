@@ -1,14 +1,14 @@
 
 
 <template>
-    <div class="flex flex-col min-h-screen">
+    <div class="flex flex-col min-h-screen" :class="{'rtl': isRTL(),'ltr': !isRTL()}">
         <CustomHeader></CustomHeader>
         <main class="bg-primary-blue/10">
              <RouterView />
         </main>
         <CustomFooter class="mt-auto"></CustomFooter>
         </div>
-</template>"
+</template>
 
 <style scoped>
 

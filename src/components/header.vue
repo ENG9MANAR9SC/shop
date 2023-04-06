@@ -33,8 +33,8 @@
                         </div>
                         <div :class="{ 'hidden': !showMenu }" class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
                             <div class="text-lg lg:flex-grow">
-                                <RouterLink  class="block mt-4 lg:inline-block lg:mt-0 text-secondery hover:text-gray-200 mr-4" to="/"> Home </RouterLink>
-                                <RouterLink class="block mt-4 lg:inline-block lg:mt-0 text-secondery hover:text-gray-200 mr-4" to="/product">  Shop</RouterLink>
+                                <RouterLink  class="block mt-4 lg:inline-block lg:mt-0 text-secondery hover:text-gray-200 mr-4" to="/">{{ $t('Home') }}  </RouterLink>
+                                <RouterLink class="block mt-4 lg:inline-block lg:mt-0 text-secondery hover:text-gray-200 mr-4" to="/product"> {{ $t('Shop') }} </RouterLink>
                                 <div class="relative mt-4 lg:hidden">
                                     <button class="text-secondery hover:text-gray-200 focus:outline-none focus:shadow-outline" @click="showCategories = !showCategories">
                                         <span>Categories</span>
@@ -44,9 +44,9 @@
                                       <!--   <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 hover:text-gray-900"> Category 1  </a> -->
                                     </div>
                                 </div>
-                                    <RouterLink class="block mt-4 lg:inline-block lg:mt-0 text-secondery hover:text-gray-200 mr-4" to="/blog">Blog</RouterLink>
-                                    <RouterLink class="block mt-4 lg:inline-block lg:mt-0 text-secondery hover:text-gray-200" to="/contact-us">Contact us</RouterLink>
-                                    <RouterLink class="block mt-4 lg:inline-block lg:mt-0 text-secondery hover:text-gray-200 ml-4" to="/about-us"> About us </RouterLink>
+                                    <RouterLink class="block mt-4 lg:inline-block lg:mt-0 text-secondery hover:text-gray-200 mx-4" to="/blog">{{ $t('Blog') }} </RouterLink>
+                                    <RouterLink class="block mt-4 lg:inline-block lg:mt-0 text-secondery hover:text-gray-200 mx-4" to="/contact-us">{{ $t('Contact us') }} </RouterLink>
+                                    <RouterLink class="block mt-4 lg:inline-block lg:mt-0 text-secondery hover:text-gray-200 mx-4" to="/about-us">{{ $t('About us') }}  </RouterLink>
                             </div>
                         </div>
                     </nav>

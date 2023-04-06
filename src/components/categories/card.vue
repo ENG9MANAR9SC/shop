@@ -5,7 +5,7 @@
             <div class="flex flex-col gap-3 p-2">
                 <h2 class="h-sec">{{ title }}</h2>
                 <div class="text-base text-primary font-tenor leading-5 min-h-[calc(3*20px)] line-clamp-3">{{ description }}</div>
-                <RouterLink to="/product" class="btn-sm">Shop Now</RouterLink>
+                <RouterLink to="/product" class="btn-sm"> {{ $t('Shop Now') }} </RouterLink>
             </div>
         </div>
     </div>

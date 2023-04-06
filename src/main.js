@@ -28,5 +28,11 @@ app.use(i18n)
         // language: 'de',
     },
 }) */
-
+app.mixin({
+    methods: {
+      isRTL() {
+        return this.$i18n.locale == 'ar' || this.$i18n.locale == 'ku';
+      },
+  }
+})
 app.mount('#app')

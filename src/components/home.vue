@@ -6,17 +6,17 @@
                 <img class="w-full lg:h-72 h-36 object-cover rounded-tl-lg rounded-tr-[60px] rounded-b-lg opacity-50 " src="/icons/drinks/drink1.png" >
             </div>
             <!-- Text and Buttons Above Image -->
-            <div class="absolute top-0 left-8 h-full flex flex-col justify-center p-4">
-                <h2 class="text-white lg:text-2xl text-xl font-tenor mb-3">You can Now shop what you want</h2>
+            <div class="absolute top-0 h-full flex flex-col justify-center items-start mx-6 p-4">
+                <h2 class="text-white lg:text-2xl text-xl font-tenor mb-3">{{ $t('You can Now shop what you want') }}</h2>
                 <RouterLink to="/product" class="bg-secondery text-white py-2 px-2 text-center rounded-[20px] shadow-md hover:shadow-lg transition duration-300 w-36" >
-                  {{ $t('Home') }}
+                  {{ $t('Buy Now') }}
                 </RouterLink>
             </div>
         </div> 
         <!-- Categories -->
         <div class=" relative mt-16 mb-8">
             <div class="c-container">
-                    <h2 class="h-header">Categories</h2>
+                    <h2 class="h-header">{{ $t('Categories')}}</h2>
                     <div class="flex flex-wrap justify-between">
                         <div v-for="(category , index) in categories" class="responsivefour"><!--  class="item-card" @click="activateCard(index)" :class="{ 'active': activeIndex === index }" -->
                             <category :key="index" :title="category.title" :description="category.description" :image="category.image" class="mx-2 item-card"  @click="activateCard(index)" :class="{ 'active': activeIndex === index }" :style="{ 'animation-name': activeIndex === index ? 'bounce' : '' }"/>
@@ -28,7 +28,7 @@
          <!-- New Products -->
         <div class=" relative mt-16 mb-8">
             <div class="c-container">
-                    <h2 class="h-header">New Products</h2>
+                    <h2 class="h-header">{{ $t('New Products') }} </h2>
                     <div class="flex flex-wrap justify-between">
                       <div v-for="product in products" class="responsivefour">
                             <cardnew :key="product.title" :product="product" />
@@ -40,7 +40,7 @@
         <!-- Best Products -->
         <div class=" relative mt-16 mb-8">
             <div class="c-container">
-                    <h2 class="h-header">Best Products</h2>
+                    <h2 class="h-header">{{ $t('Best Products') }}  </h2>
                     <div class="flex flex-wrap justify-between">
                       <div v-for="product in products" class="responsivefour">
                             <cardnew :key="product.title" :product="product" />
@@ -53,7 +53,7 @@
         <!-- Our Brands -->
         <div class="mt-16 mb-8">
            <div class="c-container">
-                 <h2 class="h-header">Our Brands</h2>
+                 <h2 class="h-header">{{ $t('Our Brands') }} </h2>
                  <div class="flex flex-wrap justify-between">
                     <div v-for="brand in brands" class="responsive">
                         <brand  :key="brand.title" :title="brand.title" :description="brand.description" :image="brand.image" class="mx-2"/>
@@ -65,7 +65,7 @@
         <!-- Customer Reviews -->
         <div class="mt-16 mb-8">
             <div class="c-container">
-                 <h2 class="h-header">Customer Reviews</h2>
+                 <h2 class="h-header">{{ $t('Customer Reviews') }} </h2>
                  <div class="flex flex-wrap justify-between">
                     <div v-for="review in reviews" class="responsive">
                         <review  :key="review.title" :title="review.title" :description="review.description" :image="review.image" class="mx-2"/>
@@ -77,7 +77,7 @@
         <!-- Services -->
         <div class="mt-16 mb-8 ">
             <div class="c-container ">
-                 <h2 class="h-header">Services</h2>
+                 <h2 class="h-header">{{ $t('Services') }} </h2>
                  <div class="flex flex-wrap justify-between ">
                     <div v-for="service in services" class="responsive ">
                         <service :key="service.title" :title="service.title" :description="service.description" :image="service.image" class="mx-3"/>

@@ -13,7 +13,7 @@
 		<template v-for="language in languages" :key="language">
 			<button
 			class="flex items-center justify-between w-full px-4 py-2 text-sm text-secondery hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:bg-gray-100 focus:text-gray-900" :class="{ 'font-medium': activeLanguage === language }"	@click="selectLanguage(language)">
-			<img :src="languageIcons[language].icon" :alt="languageIcons[language].name" class="h-5 w-5" />
+			<img :src="languageIcons[language].icon" :alt="languageIcons[language].name" class="h-5 w-5 mx-2" />
 			<span class="mx-2">{{ languageIcons[language].name }}</span>
 			<!-- <svg class="h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
 				<path fill-rule="evenodd" d="M6.293 6.707a1 1 0 010-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 11-1.414 1.414L11 4.414V16a1 1 0 11-2 0V4.414L7.707 6.121a1 1 0 01-1.414 0z" clip-rule="evenodd" />

@@ -28,7 +28,7 @@
 
         <!-- filter -->
         <div class="">
-            <button class="text-white px-8 py-2 rounded-full font-tenor mt-8 bg-gradient-to-r custom-bgcolor"> All</button>
+            <button class="text-white px-8 py-2 rounded-full font-tenor mt-8 bg-gradient-to-r custom-bgcolor">{{ $t('All') }}</button>
         </div>
         <div class="flex flex-wrap justify-between">
              <div v-for="product in products" class="responsivefour">

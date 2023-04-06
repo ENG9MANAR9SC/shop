@@ -9,8 +9,8 @@
                         <span class="font-bold">{{ product?.title}}</span>
                         <span class="font-bold">  {{ product?.price}}$ </span> 
                         <div class="flex gap-3">
-                            <button class="btn">Buy Now</button>
-                            <button class="btn-secondery">Add to Cart</button>
+                            <button class="btn">{{ $t('Buy Now') }} </button>
+                            <button class="btn-secondery"> {{ $t('Add to Cart') }} </button>
                         </div>
                     </div>
                     <div class="">
@@ -22,9 +22,9 @@
 
         <div class="mt-16 mb-8">
             <div class="flex w-1/2">
-                <button class="btn-secondery rounded-l-[0px] font-bold bg-primary-blue" :class="{ 'bg-gray-400': activeTab === 'description' }" @click="activeTab = 'description'">Description</button>
-                <button class="btn-secondery rounded-l-[0px] font-bold bg-primary-blue"  :class="{ 'bg-gray-400': activeTab === 'comment' }" @click="activeTab = 'comment'">Review</button>
-                <button class="btn-secondery rounded-l-[0px] font-bold bg-primary-blue"  :class="{ 'bg-gray-400': activeTab === 'review' }" @click="activeTab = 'review'">Comments</button>
+                <button class="btn-secondery rounded-l-[0px] font-bold bg-primary-blue" :class="{ 'bg-gray-400': activeTab === 'description' }" @click="activeTab = 'description'">{{ $t('Description') }} </button>
+                <button class="btn-secondery rounded-l-[0px] font-bold bg-primary-blue"  :class="{ 'bg-gray-400': activeTab === 'comment' }" @click="activeTab = 'comment'">{{ $t('Review') }} </button>
+                <button class="btn-secondery rounded-l-[0px] font-bold bg-primary-blue"  :class="{ 'bg-gray-400': activeTab === 'review' }" @click="activeTab = 'review'">{{ $t('Comments') }} </button>
             </div>
             <div class="  "> 
                 <div class="p-0.5 w-full custom-round custom-bgcolor">
