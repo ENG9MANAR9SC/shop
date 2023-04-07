@@ -2,7 +2,7 @@
     <div class="c-container mt-8">
         <div class="relative">
             <div class="bg-primary-blue w-full h-44 top-2 -left-2 rounded-md absolute z-[-1]"></div>   
-            <img :src="product?.image" alt="" class="w-full h-44 object-cover rounded-md">  
+            <RouterLink :to="`/product/${product.id}`"><img :src="product?.image" alt="" class="w-full h-44 object-cover rounded-md"></RouterLink>  
             <div class="flex justify-between my-3">
                 <h3 class="font-tenor text-xl text-secondery">{{ product?.title }}</h3>
                 <div class="flex">
@@ -19,15 +19,16 @@
 
 <script>
 export default {
-  name: "cardnew",
-  props: {
-
-    product: Object,
-  },
+    name: "cardnew",
+    props: {
+        product: Object,
+    },
+    components: { RouterLink }
 };
 </script>
 <!-- set up store  -->
 <script setup>
+import { RouterLink } from 'vue-router';
 import { CartStore } from '../../stores/counter'
 
 const cart = CartStore()

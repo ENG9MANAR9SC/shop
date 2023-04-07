@@ -13,6 +13,7 @@ export default {
         'All Reserved by Company 2023':'All Reserved by Company 2023',
         'Gold Light':'Gold Light',
         'You can Now shop what you want':'You can Now shop what you want',
+        '+964 *** ***':'+964 *** ***',
 
         'Categories':'Categories',
         'New Products':'New Products',
@@ -42,6 +43,8 @@ export default {
         'All Reserved by Company 2023':'كل الحقوق محفوظة 2023',
         'Gold Light':'شركة غولد لايت',
         'You can Now shop what you want':'يمكنك شراء ما تحتاجه الان',
+        '+964 *** ***':'+٩٦٤*** ***',
+
         'Categories':'الاصناف',
         'New Products':'المنتجات الجديدة',
         'Best Products':'أفضل المنتجات',
@@ -70,6 +73,7 @@ export default {
         'All Reserved by Company 2023':'',
         'Gold Light':'',
         'You can Now shop what you want':'',
+        '+964 *** ***':'',
 
         'Categories':'',
         'New Products':'',

@@ -12,7 +12,7 @@
                     </div>
                     <div class="flex">
                         
-                        <RouterLink to="/" class="btn-secondery" @click="cart.addProductToCart(product,product?.quantity)">{{ $t('Add to Cart') }} </RouterLink>
+                        <RouterLink to="/" class="btn-secondery w-full" @click="cart.addProductToCart(product,product?.quantity)">{{ $t('Add to Cart') }} </RouterLink>
                     </div>
                 </div>
             </div>

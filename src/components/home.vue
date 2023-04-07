@@ -196,7 +196,17 @@ export default {
         methods: {
     activateCard(index) {
       this.activeIndex = index
-    }
+    },
+    fetchServices() {
+          //  this.isLoading = true;
+            const url = 'api/service/all_without_paginate';
+
+            return this.$http.get(url)
+                .then(res => {
+                    this.services = res.data.data;
+                //    this.isLoading = false;
+                })
+        },
   }, 
   mounted() {
         this.products = products;

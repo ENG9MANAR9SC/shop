@@ -5,7 +5,7 @@
                 <div class="c-container flex justify-between items-center text-white">
                     <div class="flex">
                         <img src="/icons/socialmedia/call.png" alt="" class="h-6 w-6 mx-1">
-                        <span>+964 847 857</span>
+                        <span>{{ $t('+964 *** ***') }} </span>
                     </div>
 
                     <div>
@@ -33,10 +33,10 @@
                         </div>
                         <div :class="{ 'hidden': !showMenu }" class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
                             <div class="text-lg lg:flex-grow">
-                                <RouterLink  class="block mt-4 lg:inline-block lg:mt-0 text-secondery hover:text-gray-200 mr-4" to="/">{{ $t('Home') }}  </RouterLink>
-                                <RouterLink class="block mt-4 lg:inline-block lg:mt-0 text-secondery hover:text-gray-200 mr-4" to="/product"> {{ $t('Shop') }} </RouterLink>
+                                <RouterLink  class="block mt-4 lg:inline-block lg:mt-0 text-secondery hover:text-gray-200 mx-2" to="/">{{ $t('Home') }}  </RouterLink>
+                                <RouterLink class="block mt-4 lg:inline-block lg:mt-0 text-secondery hover:text-gray-200 mx-2" to="/product"> {{ $t('Shop') }} </RouterLink>
                                 <div class="relative mt-4 lg:hidden">
-                                    <button class="text-secondery hover:text-gray-200 focus:outline-none focus:shadow-outline" @click="showCategories = !showCategories">
+                                    <button class="text-secondery hover:text-gray-200 focus:outline-none focus:shadow-outline mx-2" @click="showCategories = !showCategories">
                                         <span>Categories</span>
                                         <i :class="{ 'fa-angle-down': !showCategories, 'fa-angle-up': showCategories }" class="fas ml-2"></i>
                                     </button>
@@ -44,9 +44,9 @@
                                       <!--   <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 hover:text-gray-900"> Category 1  </a> -->
                                     </div>
                                 </div>
-                                    <RouterLink class="block mt-4 lg:inline-block lg:mt-0 text-secondery hover:text-gray-200 mx-4" to="/blog">{{ $t('Blog') }} </RouterLink>
-                                    <RouterLink class="block mt-4 lg:inline-block lg:mt-0 text-secondery hover:text-gray-200 mx-4" to="/contact-us">{{ $t('Contact us') }} </RouterLink>
-                                    <RouterLink class="block mt-4 lg:inline-block lg:mt-0 text-secondery hover:text-gray-200 mx-4" to="/about-us">{{ $t('About us') }}  </RouterLink>
+                                    <RouterLink class="block mt-4 lg:inline-block lg:mt-0 text-secondery hover:text-gray-200 mx-2" to="/blog">{{ $t('Blog') }} </RouterLink>
+                                    <RouterLink class="block mt-4 lg:inline-block lg:mt-0 text-secondery hover:text-gray-200 mx-2" to="/contact-us">{{ $t('Contact us') }} </RouterLink>
+                                    <RouterLink class="block mt-4 lg:inline-block lg:mt-0 text-secondery hover:text-gray-200 mx-2" to="/about-us">{{ $t('About us') }}  </RouterLink>
                             </div>
                         </div>
                     </nav>

@@ -5,11 +5,19 @@
 .btn {
     @apply bg-secondery text-white px-8 py-2 rounded-full font-tenor text-lg text-center;
 }
+
+.rtl .btn { 
+    @apply bg-[#f00] text-white px-8 py-2 rounded-full font-tenor text-lg text-center;
+}
+
 .btn-sm {
     @apply bg-secondery text-white px-6 py-1 rounded-full font-tenor text-base text-center w-full;
 }
 .btn-secondery {
     @apply  text-secondery border border-secondery px-4 py-2 rounded-full font-tenor text-center ;
+}
+.btn-sec {
+    @apply  text-secondery px-4 py-2 rounded-full font-tenor text-center ;
 }
 .h-header {
     @apply sm:text-2xl text-xl  text-secondery font-philosopher font-bold;
