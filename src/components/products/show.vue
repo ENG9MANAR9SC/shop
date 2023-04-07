@@ -1,6 +1,6 @@
 <template>
     <div class="c-container">
-        <div class="flex pt-4 mb-8 mt-8">
+         <div class="flex pt-4 mb-8 mt-8">
            <RouterLink to="/category" class="h-header mx-2">
                 Categories
             </RouterLink>
@@ -45,13 +45,13 @@
             </svg> 
             <h1 class="h-header mx-2">{{ product?.title}}</h1>
          </div>
-        
+         
         <div class="p-0.5 w-full custom-round custom-bgcolor">
             <div class="bg-white custom-round p-4">
                 <div class="flex justify-between gap-3 p-2">
                     <div class="flex flex-col justify-center gap-3 ">
+                        <h3 class="h-sec text-base text-gradmiddel">  {{ product?.category }}</h3>
                         <h2 class="h-sec">{{ product?.title}}</h2>
-                        <div class="h-description">{{ product?.description}}</div>
                         <div>
                             <span class="font-bold h-description">Price: </span> 
                             <span class="h-description my-2">  {{ product?.price}}$ </span>
@@ -62,39 +62,36 @@
                         </div>
                     </div>
                     <div class="">
-                        <img src="/icons/drinks/drink3.png" alt="" class="rounded-3xl">
+                        <img :src="product?.image" alt="" class="rounded-3xl">
                     </div>
                 </div> 
             </div>
-        </div>
-
+        </div> 
+           {{  }}
         <div class="mt-16 mb-8">
             <div class="flex w-1/2"><!-- :class="{'rtl': isRTL(),'ltr': !isRTL()}" -->
                 <button class="btn-sec  font-bold bg-primary-blue px-4" :class="{ 'bg-gray-400': activeTab === 'description','rounded-r-[0px]': isRTL(), 'rounded-l-[0px]':!isRTL()}" @click="activeTab = 'description'">{{ $t('Description') }} </button>
-                <button class="btn-sec rounded-l-[0px] font-bold bg-primary-blue px-4"  :class="{ 'bg-gray-400': activeTab === 'comment' }" @click="activeTab = 'comment'">{{ $t('Review') }} </button>
-                <button class="btn-sec rounded-l-[0px] font-bold bg-primary-blue px-4"  :class="{ 'bg-gray-400': activeTab === 'review' }" @click="activeTab = 'review'">{{ $t('Comments') }} </button>
+                <!-- <button class="btn-sec rounded-l-[0px] font-bold bg-primary-blue px-4"  :class="{ 'bg-gray-400': activeTab === 'comment' }" @click="activeTab = 'comment'">{{ $t('Review') }} </button> -->
+                <button class="btn-sec rounded-l-[0px] font-bold bg-primary-blue px-4"  :class="{ 'bg-gray-400': activeTab === 'review' }" @click="activeTab = 'review'">{{ $t('Review') }} </button>
             </div>
             <div class="  "> 
                 <div class="p-0.5 w-full custom-round custom-bgcolor">
                     <div class="bg-white custom-round p-4 h-80">   
                         <transition name="fade" >              
-                            <div v-if="activeTab === 'description'" class="">
-                                forem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.
-                                Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.
-                                Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.                       
+                            <div v-text="product?.description" v-if="activeTab === 'description'" class="">
                             </div>
                         </transition>
 
-                        <transition name="fade" >
+                        <!-- <transition name="fade" >
                             <div v-if="activeTab === 'comment'" >
                                 worem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.
                             </div>
-                        </transition> 
+                        </transition>  -->
                         
                         <transition name="fade" >
                             <div v-if="activeTab === 'review'">
-                                Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.
-                                Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.
+                                <!-- TODO: add stars -->
+                                {{ product?.rating }}
                             </div>
                         </transition>
                     </div>
@@ -105,7 +102,8 @@
 </template>
 
 <script>
-import { products } from '../../assets/data';
+//import { products } from '../../assets/data';
+import axios  from 'axios';
 export default {
   data() {
     return {
@@ -115,12 +113,21 @@ export default {
     
         },
         mounted() {
-            console.log(this.$route.params.id)
-            let incomID = this.$route.params.id;
-            console.log(incomID)
-            let found = products.find(el => el.id == incomID)
-            console.log(found);
-            this.product = found
+            //console.log(this.$route.params.id)
+            //let incomID = this.$route.params.id;
+            //console.log(incomID)
+            //let found = products.find(el => el.id == incomID)
+            //console.log(found);
+            //this.product = found
+            axios.get(`https://fakestoreapi.com/products/${this.$route.params.id}`)
+            .then(response => {
+             this.product = response.data;
+             console.log(response)
+             console.log(this.product)
+        // })
+        // .catch(error => {
+        //     console.log(error);
+         });
     },
     methods: {
        // const id = `/showproduct/${this.$route.params.id}`; 

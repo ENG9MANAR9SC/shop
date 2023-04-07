@@ -31,10 +31,9 @@
             <button class="text-white px-8 py-2 rounded-full font-tenor mt-8 bg-gradient-to-r custom-bgcolor">{{ $t('All') }}</button>
         </div>
         <div class="flex flex-wrap justify-between">
-             <div v-for="product in products" class="responsivefour">
-                <!-- {{ product }} -->
+            <div v-for="product in products" class="responsivefour">
                 <productCard :product="product" class="mx-2"/>
-            </div>
+            </div> 
         </div>
     </div> 
     <!-- New Products -->
@@ -44,7 +43,7 @@
             <div class="flex flex-wrap justify-between">
                 <div v-for="product in products" class="responsivefour">
                     <cardnew :key="product.title" :product="product" class="mx-2"/>
-                </div>
+                </div> 
             </div>
         </div>
         <div class="absolute bg-primary-blue opacity-30 h-40 w-11/12 top-1/2 rounded-tr-[60px] rounded-br-lg z-[-2]"></div>
@@ -68,30 +67,15 @@
 <script>
 import productCard from "../products/card.vue";
 import cardnew from "../utilities/cardnew.vue";
-import { products } from "../../assets/data";
+import axios from "axios";
+//import { products } from "../../assets/data";
 
 export default {
   data() {
     return {
         products: [],
-     /*    cardnews: [
-                {
-                    title:"Carrots",
-                    image: "/icons/drinks/drink1.png",
-                },
-                {
-                    title:"PineApple",
-                    image: "/icons/drinks/drink2.png",
-                },
-                {
-                    title:"Orange",
-                    image: "/icons/drinks/drink3.png",
-                },
-                {
-                    title:"Carrots",
-                    image: "/icons/drinks/drink4.png",
-                }
-        ], */
+        categories: [],
+
            }
     },
         
@@ -103,8 +87,26 @@ export default {
 
     
     mounted() {
-        this.products = products;
-    }
+   //     this.products = products;
+       /*  axios.get('https://fakestoreapi.com/products/category/jewelery')
+        .then(response => {
+            this.categories = response.data;
+            console.log(categories)
+        })
+        .catch(error => {
+            console.log(error);
+            console.log('there is error')
+        }); */
+         axios.get('https://fakestoreapi.com/products?limit=4')
+         .then(response => {
+             this.products = response.data;
+             console.log(response)
+        // })
+        // .catch(error => {
+        //     console.log(error);
+         });
+    },
+    
 }
 
 </script>
