@@ -101,7 +101,8 @@ import cardnew from "./utilities/cardnew.vue";
 import brand from "./utilities/brands.vue";
 import service from "./utilities/services.vue";
 import review from "./utilities/reviews.vue";
-import { products } from "../assets/data";
+//import { products } from "../assets/data";
+import axios from "axios";
 export default {
   data() {
     return {
@@ -127,9 +128,7 @@ export default {
           image: "../icons/drinks/drink4.png",
         },
         ], 
-        products: [
-      
-        ],
+        products: [],
         brands: [
             {
                 title:'Brand 1',
@@ -209,7 +208,14 @@ export default {
         },
   }, 
   mounted() {
-        this.products = products;
+    axios.get('https://fakestoreapi.com/products?limit=4')
+         .then(response => {
+             this.products = response.data;
+             console.log(response)
+        // })
+        // .catch(error => {
+        //     console.log(error);
+         });
     } 
 };
         </script>

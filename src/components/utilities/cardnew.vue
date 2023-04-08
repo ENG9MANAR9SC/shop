@@ -8,12 +8,14 @@
                 </div>
             </RouterLink>  
             <div class="flex justify-between my-3">
-                <h3 class="font-tenor text-xl text-secondery line-clamp-2 leading-8">{{ product?.title }}</h3>
-                <div class="flex">
+                <h3 class="font-tenor text-xl text-secondery line-clamp-2 leading-8 w-[180px]">{{ product?.title }}</h3>
+                <div class="flex mx-1">
                     <button class="" @click="cart.addProductToCart(product)">
                         <img src="/icons/shopping.png" alt="" class="bg-secondery rounded-lg w-7 h-7 p-1 m-1" >
                     </button>
-                    <img src="/icons/search.png" alt="" class="bg-primary-blue rounded-lg w-7 h-7 p-1 m-1">
+                    <button>
+                        <img src="/icons/search.png" alt="" class="bg-primary-blue rounded-lg w-7 h-7 p-1 m-1">
+                    </button>
                 </div>
             </div>
         </div>
