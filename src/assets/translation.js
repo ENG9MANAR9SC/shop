@@ -27,8 +27,10 @@ export default {
         'Email':'Email',
         'Message':'Message',
         'Send Message':'Send Message',
+        'product':'product',
 
         'Categories':'Categories',
+        'Products':'Products',
         'New Products':'New Products',
         'Best Products':'Best Products',
         'Our Brands':'Our Brands',
@@ -70,8 +72,10 @@ export default {
         'Email':'الايميل',
         'Message':'الرسالة',
         'Send Message':'ارسال الرسالة',
+        'product':'المنتج',
 
         'Categories':'الاصناف',
+        'Products':'المنتجات',
         'New Products':'المنتجات الجديدة',
         'Best Products':'أفضل المنتجات',
         'Our Brands':'شعارنا',
@@ -113,8 +117,10 @@ export default {
         'Email':'',
         'Message':'',
         'Send Message':'',
+        'product':'',
 
         'Categories':'',
+        'Products':'',
         'New Products':'',
         'Best Products':'',
         'Our Brands':'',
