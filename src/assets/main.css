@@ -51,6 +51,7 @@
     @apply hover:bg-white hover:text-secondery hover:font-bold ;
 }
 
+
 .c-container {
     max-width: 1182px;
     @apply mx-auto px-4;

@@ -58,7 +58,7 @@
                         </div> 
                         <div class="flex gap-3">
                             <button class="btn">{{ $t('Buy Now') }} </button>
-                            <button class="btn-secondery"> {{ $t('Add to Cart') }} </button>
+                            <button class="btn-secondery"  @click="cart.addProductToCart(product,1)"> {{ $t('Add to Cart') }} </button>
                         </div>
                     </div>
                     <div class="">
@@ -100,13 +100,19 @@
         </div>
     </div>
 </template>
+<script setup>
+import { CartStore } from '../../stores/counter'
 
+const cart = CartStore()
+
+</script>
 <script>
 //import { products } from '../../assets/data';
 import axios  from 'axios';
 export default {
   data() {
     return {
+      name: "product",
       activeTab: 'description',
       product:null,
        }
