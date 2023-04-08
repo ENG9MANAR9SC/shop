@@ -33,10 +33,10 @@
                         </div>
                         <div :class="{ 'hidden': !showMenu }" class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
                             <div class="text-lg lg:flex-grow">
-                                <RouterLink  class="block mt-4 lg:inline-block lg:mt-0 text-secondery hover:text-gray-200 mx-2" to="/">{{ $t('Home') }}  </RouterLink>
-                                <RouterLink class="block mt-4 lg:inline-block lg:mt-0 text-secondery hover:text-gray-200 mx-2" to="/product"> {{ $t('Shop') }} </RouterLink>
+                                <RouterLink  class="block mt-4 lg:inline-block lg:mt-0 text-secondery mx-2 p-2 hov-menu" to="/">{{ $t('Home') }}  </RouterLink>
+                                <RouterLink class="block mt-4 lg:inline-block lg:mt-0 text-secondery hover:text-gray-200 mx-2 p-2 hov-menu" to="/product"> {{ $t('Shop') }} </RouterLink>
                                 <div class="relative mt-4 lg:hidden">
-                                    <button class="text-secondery hover:text-gray-200 focus:outline-none focus:shadow-outline mx-2" @click="showCategories = !showCategories">
+                                    <button class="text-secondery hover:text-gray-200 focus:outline-none focus:shadow-outline mx-2 p-2 hov-menu" @click="showCategories = !showCategories">
                                         <span>Categories</span>
                                         <i :class="{ 'fa-angle-down': !showCategories, 'fa-angle-up': showCategories }" class="fas ml-2"></i>
                                     </button>
@@ -44,9 +44,9 @@
                                       <!--   <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 hover:text-gray-900"> Category 1  </a> -->
                                     </div>
                                 </div>
-                                    <RouterLink class="block mt-4 lg:inline-block lg:mt-0 text-secondery hover:text-gray-200 mx-2" to="/blog">{{ $t('Blog') }} </RouterLink>
-                                    <RouterLink class="block mt-4 lg:inline-block lg:mt-0 text-secondery hover:text-gray-200 mx-2" to="/contact-us">{{ $t('Contact us') }} </RouterLink>
-                                    <RouterLink class="block mt-4 lg:inline-block lg:mt-0 text-secondery hover:text-gray-200 mx-2" to="/about-us">{{ $t('About us') }}  </RouterLink>
+                                    <RouterLink class="block mt-4 lg:inline-block lg:mt-0 text-secondery mx-2 p-2 hov-menu" to="/blog">{{ $t('Blog') }} </RouterLink>
+                                    <RouterLink class="block mt-4 lg:inline-block lg:mt-0 text-secondery mx-2 p-2 hov-menu" to="/contact-us">{{ $t('Contact us') }} </RouterLink>
+                                    <RouterLink class="block mt-4 lg:inline-block lg:mt-0 text-secondery mx-2 p-2 hov-menu" to="/about-us">{{ $t('About us') }}  </RouterLink>
                             </div>
                         </div>
                     </nav>
@@ -96,3 +96,9 @@ import { CartStore } from '../stores/counter'
 const cart = CartStore()
 
 </script>
+<style>
+.hov-menu {
+   @apply hover:bg-secondery-rose hover:rounded-2xl hover:scale-105 duration-300 delay-150  open:bg-primary-orange
+}
+
+</style>

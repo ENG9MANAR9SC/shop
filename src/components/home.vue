@@ -8,7 +8,7 @@
             <!-- Text and Buttons Above Image -->
             <div class="absolute top-0 h-full flex flex-col justify-center items-start mx-6 p-4">
                 <h2 class="text-white lg:text-2xl text-xl font-tenor mb-3">{{ $t('You can Now shop what you want') }}</h2>
-                <RouterLink to="/product" class="bg-secondery text-white py-2 px-2 text-center rounded-[20px] shadow-md hover:shadow-lg transition duration-300 w-36" >
+                <RouterLink to="/product" class="bg-secondery text-white py-2 px-2 text-center rounded-[20px] shadow-md hover:shadow-lg transition duration-300 w-36 hov-btn" >
                   {{ $t('Buy Now') }}
                 </RouterLink>
             </div>
@@ -55,7 +55,7 @@
            <div class="c-container">
                  <h2 class="h-header">{{ $t('Our Brands') }} </h2>
                  <div class="flex flex-wrap justify-between">
-                    <div v-for="brand in brands" class="responsive">
+                    <div v-for="brand in brands" class="responsive hov-img">
                         <brand  :key="brand.title" :title="brand.title" :description="brand.description" :image="brand.image" class="mx-2"/>
                     </div>
                 </div>
@@ -67,7 +67,7 @@
             <div class="c-container">
                  <h2 class="h-header">{{ $t('Customer Reviews') }} </h2>
                  <div class="flex flex-wrap justify-between">
-                    <div v-for="review in reviews" class="responsive">
+                    <div v-for="review in reviews" class="responsive hov-img">
                         <review  :key="review.title" :title="review.title" :description="review.description" :image="review.image" class="mx-2"/>
                     </div>
                 </div>
@@ -79,7 +79,7 @@
             <div class="c-container ">
                  <h2 class="h-header">{{ $t('Services') }} </h2>
                  <div class="flex flex-wrap justify-between ">
-                    <div v-for="service in services" class="responsive ">
+                    <div v-for="service in services" class="responsive hov-img">
                         <service :key="service.title" :title="service.title" :description="service.description" :image="service.image" class="mx-3"/>
                     </div>
                 </div>
