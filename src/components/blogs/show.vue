@@ -11,8 +11,8 @@
         <div class=" z-10 relative c-container">
             <!-- absolute top-6 left-8 h-1/3 -->
             <div class="p-4 mx-4">
-                <h2 class="h-header z-10 -mx-8">Blogs</h2>
-                <div class="text-secondery bg-white p-2 px-12 rounded-[20px]"> is dummy text used in laying out print, graphic or web </div>
+                <h2 class="h-header z-10 -mx-8">{{ $t('Blogs') }} </h2>
+                <div class="text-secondery bg-white p-2 px-12 rounded-[20px]">{{ $t('is dummy text used in laying out print, graphic or web') }}  </div>
             </div>
         </div>
     </div>
@@ -40,7 +40,7 @@
     <!-- Top Blogs -->
     <div class="mt-16 mb-8">
         <div class="c-container">
-            <h2 class="h-header">Top Blogs</h2>
+            <h2 class="h-header">{{ $t('Top Blogs') }}</h2>
             <div class="flex flex-wrap justify-between">
                 <div v-for="card in cards" class="responsivefour">
                 <card :key="card.title" :title="card.title" :image="card.image" class="mx-4"/>
@@ -52,7 +52,7 @@
     <!-- Recent Blogs -->
     <div class="mt-16 mb-8">
         <div class="c-container">
-            <h2 class="h-header">Recent Blogs</h2>
+            <h2 class="h-header">{{ $t('Recent Blogs') }} </h2>
             <div class="flex flex-wrap justify-between">
                 <div v-for="card in cards" class="responsivefour">
                 <card :key="card.title" :title="card.title" :image="card.image" class="mx-4"/>

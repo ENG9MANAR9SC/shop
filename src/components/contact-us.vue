@@ -4,11 +4,11 @@
                 <div>
                     <div class="mt-16 mb-8 p-0.5 w-full custom-round custom-bgcolor">
                         <div class="bg-white custom-round p-8">
-                            <h2 class="h-header text-2xl mb-4"> Contact Us</h2>
+                            <h2 class="h-header text-2xl mb-4">{{ $t('Contact Us') }} </h2>
                             <form class="w-full" @submit.prevent="submitForm">
                                 <div class="flex gap-4 flex-col md:flex-row">
                                     <div class="my-4 w-full">
-                                        <label class="text-primary font-tenor text-xl" for="full-name"> FullName</label>
+                                        <label class="text-primary font-tenor text-xl" for="full-name">{{ $t('Full Name') }} </label>
                                         <input
                                             class="appearance-none border rounded-xl border-secondery w-full py-3 px-3 text-primary leading-tight focus:outline-none focus:shadow-outline"
                                             id="full-name"
@@ -21,7 +21,7 @@
 
                                     <div class="my-4 w-full">
                                         <label class="text-primary font-tenor text-xl" for="email">
-                                            Email
+                                            {{ $t('Email') }} 
                                         </label>
                                         <input
                                             class="appearance-none border rounded-xl border-secondery w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
@@ -34,12 +34,12 @@
                                     </div>
                                 </div>
                                 <div class="my-4">
-                                    <label class="text-primary font-tenor text-xl" for="message">Message </label>
+                                    <label class="text-primary font-tenor text-xl" for="message">{{ $t('Message') }}  </label>
                                     <textarea
                                         class="appearance-none border rounded-xl border-secondery w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                                         id="message"
                                         rows="5"
-                                        placeholder="Enter your message here"
+                                        placeholder=" write your message here"
                                         v-model="message"
                                         required
                                     ></textarea>
@@ -50,7 +50,7 @@
                                         class="btn hover:bg-blue-700 text-white focus:outline-none focus:shadow-outline"
                                         type="submit"
                                     >
-                                        Send Message
+                                 {{ $t('Send Message') }} 
                                     </button>
                                 </div>
                             </form>
@@ -64,7 +64,7 @@
                         <div class="mt-4 p-0.5 w-full custom-round custom-bgcolor">
                             <div class="bg-white custom-round p-4">
                                 <div>
-                                    <h3 class="font-philosopher text-2xl font-bold text-secondery my-4">Contact us</h3>
+                                    <h3 class="font-philosopher text-2xl font-bold text-secondery my-4">{{ $t('Contact Us') }} </h3>
                                     <div class="flex my-3">
                                         <img src="/icons/socialmedia/location.png" alt="" class="w-6 h-6">
                                         <a href="" class="px-3 text-primary text-xl font-tenor">Erbil,Ankawa Street</a>
@@ -131,6 +131,7 @@ export default {
       fullName: '',
       email: '',
       message: '',
+      
 
     }
   },

@@ -7,10 +7,10 @@
 
         <div class="flex flex-wrap ">
             <div  v-for="product in cart.getProducts" :key="product.id" class="m-2">
-                <img :src="product?.image" alt="" class="w-full h-44 object-cover rounded-t-lg">
+                <img :src="product?.image" alt="" class="h-64 object-cover mx-auto rounded-t-lg">
                 <div class="custom-bgcolor p-0.5 rounded-lg mt-2">
                     <div class="bg-white px-2 rounded-lg">
-                        <div class="p-2">
+                        <div class="p-2 ">
                             <h3 class="text-xl text-secondery font-philosopher font-bold my-2">{{ product.title}}</h3>
                             <div class="my-3 text-lg ">
                                 <span>Price:</span>
@@ -27,7 +27,8 @@
                             <div class="flex justify-between text-tenor text-lg text-white bg-secondery p-3 rounded-b-lg -mx-2">
                                 <span>Total</span>
                                 <span>{{ product.quantity * product.price }}$</span>
-                                <span @click="cart.removeProductFromCart(product.id)"> delete element</span>
+                                <span @click="cart.removeProductFromCart(product.id)"> <img src="/icons/Mask group.png" alt="" class="h-6">
+                                     </span>
                                 <!-- <button @click="cart.updateProductQuntity(product,15)">update</button> -->
                             </div>
                         </div>
@@ -36,7 +37,8 @@
             </div>
         </div>
         <div>
-            <button @click="cart.destroyCart">delete</button>
+            <button class="btn" >Check out</button>
+            <button class="btn-secondery bg-white mx-2" @click="cart.destroyCart">Delete</button>
            
         </div>
     <!--      <div class="flex justify-center m-4">
