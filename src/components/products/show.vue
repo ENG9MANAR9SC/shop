@@ -102,7 +102,7 @@
     </div>
 </template>
 <script setup>
-import { CartStore } from '../../stores/counter'
+import { CartStore } from '../../stores/cart'
 
 const cart = CartStore()
 

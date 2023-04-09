@@ -35,7 +35,7 @@ export default {
 <!-- set up store  -->
 <script setup>
 import { RouterLink } from 'vue-router';
-import { CartStore } from '../../stores/counter'
+import { CartStore } from '../../stores/cart'
 
 const cart = CartStore()
 
