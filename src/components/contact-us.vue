@@ -45,7 +45,7 @@
                                     ></textarea>
                                 </div>
 
-                                <div class="flex  my-4">
+                                <div class="flex justify-end  my-4">
                                     <button
                                         class="btn hover:bg-blue-700 text-white focus:outline-none focus:shadow-outline"
                                         type="submit"

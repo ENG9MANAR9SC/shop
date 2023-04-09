@@ -1,16 +1,24 @@
 <template>
     <header>
         <div class="">
-            <div class="h-8 bg-primary">
+            <div class="h-12 bg-primary">
                 <div class="c-container flex justify-between items-center text-white">
                     <div class="flex">
                         <img src="/icons/socialmedia/call.png" alt="" class="h-6 w-6 mx-1">
-                        <span>{{ $t('+964 *** ***') }} </span>
+                        <span class="ltr">{{ $t('+964 *** ***') }} </span>
                     </div>
 
-                    <div>
+                    <div class="flex items-center ">
+                        <div class="mx-6">
+                            <button class="mx-2 border-white border py-2 px-3 rounded-lg">Register</button>
+                            <button class="mx-2 border-white border py-2 px-3 rounded-lg">Sign in</button>
+                        </div>
                         <dropdown class="sm:block hidden"></dropdown>
+                        
+                            
+                        
                     </div>
+                    
                 </div>
             </div>
 

@@ -38,6 +38,8 @@ export default {
         'write your message here':'write your message here',
         'your Name':'your Name',
         'Search':'Search',
+        'Register':'Register',
+        'Password':'Password',
 
         'Categories':'Categories',
         'Products':'Products',
@@ -93,6 +95,8 @@ export default {
         'write your message here':'اكتب رسالتك هنا',
         'your Name':'اسمك',
         'Search':'البحث',
+        'Register':'التسجيل',
+        'Password':'كلمة السر',
 
 
         'Categories':'الاصناف',
@@ -149,6 +153,8 @@ export default {
         'write your message here':'',
         'your Name':'',
         'Search':'',
+        'Register':'',
+        'Password':'',
 
         'Categories':'',
         'Products':'',

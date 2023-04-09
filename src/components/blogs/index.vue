@@ -1,7 +1,7 @@
 <template>
     <div class="">
        <!-- BANNER  -->
-       <div class=" md:h-80 h-48 relative flex items-center overflow-hidden mt-8">
+       <div class=" md:h-80 h-48 relative flex items-center overflow-hidden ">
             <!-- Banner Image alt="Banner Image"-->
             <!-- <div class="relative rounded-tl-lg z-0 rounded-tr-[60px] rounded-b-lg">  -->
             <div class="bg-black z-0"> 

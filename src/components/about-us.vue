@@ -26,7 +26,7 @@
         </div> 
 
        <div>
-            <div class="mt-6 mb-8 p-0.5 w-full custom-round custom-bgcolor">
+            <div class=" mb-8 p-0.5 w-full custom-round custom-bgcolor">
                 <div class="bg-white custom-round p-8">
                     <h3 class="h-sec">{{ $t('Who We are ?') }}</h3>
                     <div class="h-description my-4">
