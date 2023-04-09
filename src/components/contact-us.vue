@@ -13,7 +13,7 @@
                                             class="appearance-none border rounded-xl border-secondery w-full py-3 px-3 text-primary leading-tight focus:outline-none focus:shadow-outline"
                                             id="full-name"
                                             type="text"
-                                            placeholder="Manar kheir"
+                                            :placeholder="$t('your Name')"
                                             v-model="fullName"
                                             required
                                         />
@@ -39,7 +39,7 @@
                                         class="appearance-none border rounded-xl border-secondery w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                                         id="message"
                                         rows="5"
-                                        placeholder=" write your message here"
+                                        :placeholder="$t('write your message here')"
                                         v-model="message"
                                         required
                                     ></textarea>

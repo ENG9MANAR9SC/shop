@@ -48,6 +48,7 @@
   </template>
   
   <script>
+  import axios from "axios";
   export default {
     data() {
       return {
@@ -84,17 +85,26 @@
             },
 
         ], */
-
+        carts:[],
         
       }
  
     },
+    mounted() {
+    axios.get('https://fakestoreapi.com/carts?limit=4')
+         .then(response => {
+             this.carts = response.data;
+             console.log(response)
+        // })
+        // .catch(error => {
+        //     console.log(error);
+         });
   }
   </script>
 
 <script setup>
-import { CartStore } from '../../stores/counter'
+//import { CartStore } from '../../stores/counter'
 
-const cart = CartStore()
+//const cart = CartStore()
 
 </script>

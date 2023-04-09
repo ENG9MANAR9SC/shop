@@ -28,7 +28,8 @@
                         </div> -->
                         <div class="block lg:hidden">
                             <button class="flex items-center px-3 py-2 border rounded text-secondery border-white hover:text-gray-200 hover:border-gray-200" @click="toggleMenu">
-                                <i class="fas fa-bars"></i>
+                                <!-- <i class="fas fa-bars"></i> -->
+                                <img src="/icons/menu.png" alt="" class="h-5 w-5" @click="toggleMenu">
                             </button>
                         </div>
                         <div :class="{ 'hidden': !showMenu }" class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
@@ -77,6 +78,7 @@ export default{
     const showCategories = ref(false);
     const toggleMenu = () => {
       showMenu.value = !showMenu.value;
+      console.log('do')
     };
 
     return {

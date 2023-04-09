@@ -18,9 +18,10 @@
             <div class="c-container">
                     <h2 class="h-header">{{ $t('Categories')}}</h2>
                     <div class="flex flex-wrap justify-between">
-                        <div v-for="(category , index) in categories" class="responsivefour"><!--  class="item-card" @click="activateCard(index)" :class="{ 'active': activeIndex === index }" -->
-                            <category :key="index" :title="category.title" :description="category.description" :image="category.image" class="mx-2 item-card"  @click="activateCard(index)" :class="{ 'active': activeIndex === index }" :style="{ 'animation-name': activeIndex === index ? 'bounce' : '' }"/>
-                        </div>
+                        <div v-for="category in categories" class="responsivefour"><!--  class="item-card" @click="activateCard(index)" :class="{ 'active': activeIndex === index }" -->
+                            <!-- <category :key="index" :title="category.title" :description="category.description" :image="category.image" class="mx-2 item-card"  @click="activateCard(index)" :class="{ 'active': activeIndex === index }" :style="{ 'animation-name': activeIndex === index ? 'bounce' : '' }"/> -->
+                            <category :key="category"  :category="category"  class="mx-2 item-card"  @click="activateCard(index)" :class="{ 'active': activeIndex === index }" :style="{ 'animation-name': activeIndex === index ? 'bounce' : '' }"/>
+                          </div>
                     </div>
             </div>
             <div class="absolute bg-primary-rose opacity-30 lg:h-40 md:h-28 h-12 xl:w-11/12 w-full md:w-full lg:top-1/2 md:top-1/3 top-64 rounded-tr-[60px] rounded-br-lg z-[-2]"></div>
@@ -134,6 +135,8 @@ export default {
         },
         ], 
         products: [],
+        categories:[],
+        carts:[],
         brands: [
         { en:{
                 title:'Brand 1',
@@ -252,6 +255,22 @@ export default {
     axios.get('https://fakestoreapi.com/products?limit=4')
          .then(response => {
              this.products = response.data;
+             console.log(response)
+        // })
+        // .catch(error => {
+        //     console.log(error);
+         });
+         axios.get('https://fakestoreapi.com/products/categories')
+         .then(response => {
+             this.categories = response.data;
+             console.log(response)
+        // })
+        // .catch(error => {
+        //     console.log(error);
+         });
+         axios.get('https://fakestoreapi.com/carts/5')
+         .then(response => {
+             this.carts = response.data;
              console.log(response)
         // })
         // .catch(error => {

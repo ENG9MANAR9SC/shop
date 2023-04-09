@@ -2,7 +2,7 @@
     <div class="c-container mt-8">
         <div class="relative ">
             <div class="bg-primary-blue w-full h-44 top-2 -left-2 rounded-md absolute z-[-1] "></div>   
-            <RouterLink :to="`/product/${product.id}`">
+            <RouterLink :to="`products/${product.id}`">
                 <div class="w-full h-44 rounded-md bg-white hov-img">
                     <img :src="product?.image" alt="" class="w-full h-full object-contain ">
                 </div>

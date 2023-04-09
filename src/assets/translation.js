@@ -32,6 +32,12 @@ export default {
         'Check out':'Check out',
         'Delete':'Delete',
         'Your Orders':'Your Orders',
+        'The Price is':'The Price is',
+        'The Rate is':'The Rate is',
+        'The Count is':'The Count is',
+        'write your message here':'write your message here',
+        'your Name':'your Name',
+        'Search':'Search',
 
         'Categories':'Categories',
         'Products':'Products',
@@ -81,6 +87,12 @@ export default {
         'Check out':'التحقق',
         'Delete':'حذف',
         'Your Orders':'طلباتك',
+        'The Price is':'السعر',
+        'The Rate is':'معدل التصنيف',
+        'The Count is':'العدد الاجمالي',
+        'write your message here':'اكتب رسالتك هنا',
+        'your Name':'اسمك',
+        'Search':'البحث',
 
 
         'Categories':'الاصناف',
@@ -131,6 +143,12 @@ export default {
         'Check out':'',
         'Delete':'',
         'Your Orders':'',
+        'The Price is':'',
+        'The Rate is':'',
+        'The Count is':'',
+        'write your message here':'',
+        'your Name':'',
+        'Search':'',
 
         'Categories':'',
         'Products':'',
