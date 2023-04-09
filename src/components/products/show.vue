@@ -70,9 +70,9 @@
            {{  }}
         <div class="mt-16 mb-8">
             <div class="flex w-1/2"><!-- :class="{'rtl': isRTL(),'ltr': !isRTL()}" -->
-                <button class="btn-sec  font-bold bg-primary-blue px-4" :class="{ 'bg-gray-400': activeTab === 'description','rounded-r-[0px]': isRTL(), 'rounded-l-[0px]':!isRTL()}" @click="activeTab = 'description'">{{ $t('Description') }} </button>
+                <button class="btn-sec  font-bold bg-primary-blue px-4" :class="{ 'bg-secondery text-white ': activeTab === 'description','rounded-r-[0px]': isRTL(), 'rounded-l-[0px]':!isRTL()}" @click="activeTab = 'description'">{{ $t('Description') }} </button>
                 <!-- <button class="btn-sec rounded-l-[0px] font-bold bg-primary-blue px-4"  :class="{ 'bg-gray-400': activeTab === 'comment' }" @click="activeTab = 'comment'">{{ $t('Review') }} </button> -->
-                <button class="btn-sec rounded-l-[0px] font-bold bg-primary-blue px-4"  :class="{ 'bg-gray-400': activeTab === 'review' }" @click="activeTab = 'review'">{{ $t('Review') }} </button>
+                <button class="btn-sec  font-bold bg-primary-blue px-4"  :class="{ ' bg-secondery text-white  ': activeTab === 'review','rounded-r-[0px]': isRTL(), 'rounded-l-[0px]':!isRTL()}" @click="activeTab = 'review'">{{ $t('Review') }} </button>
             </div>
             <div class="  "> 
                 <div class="p-0.5 w-full custom-round custom-bgcolor">

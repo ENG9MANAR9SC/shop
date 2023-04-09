@@ -28,6 +28,10 @@ export default {
         'Message':'Message',
         'Send Message':'Send Message',
         'product':'product',
+        'The Results':'The Results',
+        'Check out':'Check out',
+        'Delete':'Delete',
+        'Your Orders':'Your Orders',
 
         'Categories':'Categories',
         'Products':'Products',
@@ -73,6 +77,11 @@ export default {
         'Message':'الرسالة',
         'Send Message':'ارسال الرسالة',
         'product':'المنتج',
+        'The Results':'النتائج',
+        'Check out':'التحقق',
+        'Delete':'حذف',
+        'Your Orders':'طلباتك',
+
 
         'Categories':'الاصناف',
         'Products':'المنتجات',
@@ -118,6 +127,10 @@ export default {
         'Message':'',
         'Send Message':'',
         'product':'',
+        'The Results':'',
+        'Check out':'',
+        'Delete':'',
+        'Your Orders':'',
 
         'Categories':'',
         'Products':'',

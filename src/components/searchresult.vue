@@ -1,6 +1,6 @@
 <template>
     <div class="c-container mt-16 mb-16">
-        <h2 class="h-header">The Results</h2>
+        <h2 class="h-header">{{ $t('The Results') }} </h2>
         <div class="h-0.5 bg-secondery my-2"></div>
         <div class="c-container">
             <div class="flex flex-wrap justify-between">
@@ -9,7 +9,6 @@
                 </div>
             </div>
         </div>
-       
     </div>
 </template>
 

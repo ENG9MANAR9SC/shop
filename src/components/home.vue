@@ -56,7 +56,8 @@
                  <h2 class="h-header">{{ $t('Our Brands') }} </h2>
                  <div class="flex flex-wrap justify-between">
                     <div v-for="brand in brands" class="responsive hov-img">
-                        <brand  :key="brand.title" :title="brand.title" :description="brand.description" :image="brand.image" class="mx-2"/>
+                        <brand v-if="this.$i18n.locale == 'en'" :key="brand.en.title" :title="brand.en.title" :description="brand.en.description" :image="brand.en.image" class="mx-2"/>
+                        <brand v-else="this.$i18n.locale == 'ar'" :key="brand.ar.title" :title="brand.ar.title" :description="brand.ar.description" :image="brand.ar.image" class="mx-2"/>
                     </div>
                 </div>
            </div> 
@@ -68,8 +69,9 @@
                  <h2 class="h-header">{{ $t('Customer Reviews') }} </h2>
                  <div class="flex flex-wrap justify-between">
                     <div v-for="review in reviews" class="responsive hov-img">
-                        <review  :key="review.title" :title="review.title" :description="review.description" :image="review.image" class="mx-2"/>
-                    </div>
+                        <review v-if="this.$i18n.locale == 'en'" :key="review.en.title" :title="review.en.title" :description="review.en.description" :image="review.en.image" class="mx-2"/>
+                        <review v-else="this.$i18n.locale == 'ar'" :key="review.ar.title" :title="review.ar.title" :description="review.ar.description" :image="review.ar.image" class="mx-2"/>
+                      </div>
                 </div>
            </div> 
         </div>
@@ -80,8 +82,11 @@
                  <h2 class="h-header">{{ $t('Services') }} </h2>
                  <div class="flex flex-wrap justify-between ">
                     <div v-for="service in services" class="responsive hov-img">
-                        <service :key="service.title" :title="service.title" :description="service.description" :image="service.image" class="mx-3"/>
-                    </div>
+                      <!-- 'service.ar.title': isRTL(), 'service.en.title':!isRTL() -->
+                        <!-- <service :key="service.title" :title="service.title" :description="service.description" :image="service.image" class="mx-3"/> -->
+                        <service v-if="this.$i18n.locale == 'en'" :key="service.en.title" :title="service.en.title" :description="service.en.description" :image="service.en.image" class="mx-3"/>
+                        <service v-else="this.$i18n.locale == 'ar'" :key="service.ar.title" :title="service.ar.title" :description="service.ar.description" :image="service.ar.image" class="mx-3"/>
+                      </div>
                 </div>
            </div> 
         </div>
@@ -130,55 +135,100 @@ export default {
         ], 
         products: [],
         brands: [
-            {
+        { en:{
                 title:'Brand 1',
                 description:'Lorem used in the graphic, print, and  industries for previewing layouts and visual mockups Lorem used in the graphic, print, and  industries for previewing layouts and visual mockups',
-
+              },
+              ar:{
+                title:'جنرال',
+                description:'لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليتصور طريقه وضع النصوص بالتصاميم سواء كانت تصاميم مطبوعه ... بروشور او فلاير',
+            
+              }
             },
-            {
-                title:'Brand 2',
+            { en:{
+                title:'Brand 1',
                 description:'Lorem used in the graphic, print, and  industries for previewing layouts and visual mockups Lorem used in the graphic, print, and  industries for previewing layouts and visual mockups',
-
+              },
+              ar:{
+                title:'غوتشي',
+                description:'لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليتصور طريقه وضع النصوص بالتصاميم سواء كانت تصاميم مطبوعه ... بروشور او فلاير',
+            
+              }
             },
-            {
-                title:'Brand 3',
+            { en:{
+                title:'Brand 1',
                 description:'Lorem used in the graphic, print, and  industries for previewing layouts and visual mockups Lorem used in the graphic, print, and  industries for previewing layouts and visual mockups',
-
+              },
+              ar:{
+                title:'نايك',
+                description:'لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليتصور طريقه وضع النصوص بالتصاميم سواء كانت تصاميم مطبوعه ... بروشور او فلاير',
+            
+              }
             },
         ],
         services: [
-        {
+         { en:{
                 title:'Service 1',
                 description:'Lorem used in the graphic, print, and  industries for previewing layouts and visual mockups Lorem used in the graphic, print, and  industries for previewing layouts and visual mockups',
-
-            },
-            {
-                title:'Service 2',
-                description:'Lorem used in the graphic, print, and  industries for previewing layouts and visual mockups Lorem used in the graphic, print, and  industries for previewing layouts and visual mockups',
-
-            },
-            {
-                title:'Service 3',
-                description:'Lorem used in the graphic, print, and  industries for previewing layouts and visual mockups Lorem used in the graphic, print, and  industries for previewing layouts and visual mockups',
-
-            },
+              },
+              ar:{
+                title:'خدمات الطباعة',
+                description:'لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليتصور طريقه وضع النصوص بالتصاميم سواء كانت تصاميم مطبوعه ... بروشور او فلاير طباعة المنتجات و التسويق ',
             
+              }
+            },
+            { en:{
+                title:'Service 1',
+                description:'Lorem used in the graphic, print, and  industries for previewing layouts and visual mockups Lorem used in the graphic, print, and  industries for previewing layouts and visual mockups',
+              },
+              ar:{
+                title:'خدمات الطباعة',
+                description:'لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليتصور طريقه وضع النصوص بالتصاميم سواء كانت تصاميم مطبوعه ... بروشور او فلاير طباعة المنتجات و التسويق ',
+            
+              }
+            },
+            { en:{
+                title:'Service 1',
+                description:'Lorem used in the graphic, print, and  industries for previewing layouts and visual mockups Lorem used in the graphic, print, and  industries for previewing layouts and visual mockups',
+              },
+              ar:{
+                title:'خدمات الطباعة',
+                description:'لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليتصور طريقه وضع النصوص بالتصاميم سواء كانت تصاميم مطبوعه ... بروشور او فلاير المنتجات و التسويق ',
+            
+              }
+            },
+ 
         ],
         reviews: [
-        {
+        { en:{
                 title:'Review 1',
                 description:'Lorem used in the graphic, print, and  industries for previewing layouts and visual mockups Lorem used in the graphic, print, and  industries for previewing layouts and visual mockups',
-
+              },
+              ar:{
+                title:'راي ',
+                description:'لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليتصور طريقه وضع النصوص بالتصاميم سواء كانت تصاميم مطبوعه ... بروشور او فلاير',
+            
+              }
             },
-            {
-                title:'Review 2',
+            { en:{
+                title:'Review 1',
                 description:'Lorem used in the graphic, print, and  industries for previewing layouts and visual mockups Lorem used in the graphic, print, and  industries for previewing layouts and visual mockups',
-
+              },
+              ar:{
+                title:'راي ',
+                description:' لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليتصور طريقه وضع النصوص بالتصاميم سواء كانت تصاميم مطبوعه ... بروشور او فلاير',
+            
+              }
             },
-            {
-                title:'Reviw 3',
+            { en:{
+                title:'Review 1',
                 description:'Lorem used in the graphic, print, and  industries for previewing layouts and visual mockups Lorem used in the graphic, print, and  industries for previewing layouts and visual mockups',
-
+              },
+              ar:{
+                title:'راي ',
+                description:' لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليتصور طريقه وضع النصوص بالتصاميم سواء كانت تصاميم مطبوعه ... بروشور او فلاير',
+            
+              }
             },
             
         ],
@@ -193,19 +243,10 @@ export default {
             review,
         }, 
         methods: {
-    activateCard(index) {
+      activateCard(index) {
       this.activeIndex = index
     },
-    fetchServices() {
-          //  this.isLoading = true;
-            const url = 'api/service/all_without_paginate';
 
-            return this.$http.get(url)
-                .then(res => {
-                    this.services = res.data.data;
-                //    this.isLoading = false;
-                })
-        },
   }, 
   mounted() {
     axios.get('https://fakestoreapi.com/products?limit=4')

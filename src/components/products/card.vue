@@ -13,7 +13,6 @@
                         <span class="mx-2 text-base text-primary line-through my-2">66$</span>
                     </div>
                     <div class="flex">
-                        
                         <RouterLink to="/" class="btn-secondery w-full" @click="cart.addProductToCart(product,product?.quantity)">{{ $t('Add to Cart') }} </RouterLink>
                     </div>
                 </div>

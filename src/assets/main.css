@@ -6,9 +6,7 @@
     @apply bg-secondery text-white px-8 py-2 rounded-full font-tenor text-lg text-center;
 }
 
-.rtl .btn { 
-    @apply bg-[#f00] text-white px-8 py-2 rounded-full font-tenor text-lg text-center;
-}
+
 
 .btn-sm {
     @apply bg-secondery text-white px-6 py-1 rounded-full font-tenor text-base text-center w-full;
@@ -30,6 +28,9 @@
 }
 .custom-round {
     @apply rounded-l-[10px] rounded-tl-[10px] rounded-tr-[60px];
+}
+.rtl .custom-round {
+    @apply rounded-l-[10px] rounded-tr-[10px] rounded-tl-[60px];
 }
 .custom-bgcolor {
   @apply bg-gradient-to-r from-primary-blue via-gradmiddel to-primary-blue ;

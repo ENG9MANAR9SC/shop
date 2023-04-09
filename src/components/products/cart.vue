@@ -1,7 +1,7 @@
 <template>
     <div class="c-container cart">
         <div class="flex items-center">
-            <h2 class="h-header mb-6">Your Orders</h2>
+            <h2 class="h-header mb-6">{{ $t('Your Orders') }} </h2>
             <div class="bg-secondery h-[1px] w-3/4 mx-4"></div>
         </div>
 
@@ -37,11 +37,11 @@
             </div>
         </div>
         <div>
-            <button class="btn" >Check out</button>
-            <button class="btn-secondery bg-white mx-2" @click="cart.destroyCart">Delete</button>
+            <button class="btn" >{{ $t('Check out') }} </button>
+            <button class="btn-secondery bg-white mx-2" @click="cart.destroyCart">{{ $t('Delete') }} </button>
            
         </div>
-    <!--      <div class="flex justify-center m-4">
+        <!--  <div class="flex justify-center m-4">
             <RouterLink to="" class="btn w-1/4 m-2">Check out ( {{ cart.reduce((acc, p) => acc + (p.price * p.quantity), 0) }}$ )</RouterLink>
         </div>  -->
     </div>

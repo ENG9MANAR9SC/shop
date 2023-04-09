@@ -24,7 +24,7 @@
                 <h2 class="h-header"> {{ $t('Top Blogs') }}  </h2>
                 <div class="flex flex-wrap justify-between">
                     <div v-for="card in cards" class="responsivefour">
-                    <card :key="card.title" :title="card.title" :image="card.image" class="mx-4"/>
+                        <card :key="card.title" :title="card.title" :image="card.image" class="mx-4"/>
                     </div>
                 </div>
             </div>
@@ -36,7 +36,7 @@
                 <h2 class="h-header"> {{ $t('Recent Blogs') }} </h2>
                 <div class="flex flex-wrap justify-between">
                     <div v-for="card in cards" class="responsivefour">
-                    <card :key="card.title" :title="card.title" :image="card.image" class="mx-4"/>
+                        <card :key="card.title" :title="card.title" :image="card.image" class="mx-4"/>
                     </div>
                 </div>
             </div>
@@ -48,7 +48,7 @@
                 <h2 class="h-header"> {{ $t('Popular Blogs') }}  </h2>
                 <div class="flex flex-wrap justify-between">
                     <div v-for="card in cards" class="responsivefour">
-                    <card :key="card.title" :title="card.title" :image="card.image" class="mx-4"/>
+                        <card :key="card.title" :title="card.title" :image="card.image" class="mx-4"/>
                     </div>
                 </div>
             </div>
