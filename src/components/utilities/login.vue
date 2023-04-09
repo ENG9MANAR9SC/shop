@@ -3,7 +3,7 @@
         <div class="c-container">
                     <div class="mt-16 mb-8 p-0.5 w-3/4  custom-round custom-bgcolor">
                         <div class="bg-white custom-round p-8">
-                            <h2  class="h-header text-2xl mb-4">{{ $t('Register') }} </h2>
+                            <h2 class="h-header text-2xl mb-4">{{ $t('Log in') }} </h2>
                             <form class="w-full" @submit="addUser">
                                 <div class=" gap-4 ">
                                     <div class="my-4 ">
@@ -49,7 +49,7 @@
                                         class="btn hover:bg-blue-700 text-white focus:outline-none focus:shadow-outline"
                                         type="submit"
                                     >
-                                 {{ $t('Register') }} 
+                                 {{ $t('Log in') }} 
                                     </button>
                                 </div>
                             </form>
@@ -58,7 +58,6 @@
                 </div>
     </form>
   </template>
-  
   <script>
   import axios from 'axios';
   export default {

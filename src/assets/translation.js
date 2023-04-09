@@ -40,6 +40,7 @@ export default {
         'Search':'Search',
         'Register':'Register',
         'Password':'Password',
+        'Log in':'Log in',
 
         'Categories':'Categories',
         'Products':'Products',
@@ -97,6 +98,7 @@ export default {
         'Search':'البحث',
         'Register':'التسجيل',
         'Password':'كلمة السر',
+        'Log in':'تسجيل الدخول',
 
 
         'Categories':'الاصناف',
@@ -155,6 +157,7 @@ export default {
         'Search':'',
         'Register':'',
         'Password':'',
+        'Log in':'',
 
         'Categories':'',
         'Products':'',

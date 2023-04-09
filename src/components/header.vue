@@ -10,12 +10,10 @@
 
                     <div class="flex items-center ">
                         <div class="mx-6">
-                            <button class="mx-2 border-white border py-2 px-3 rounded-lg">Register</button>
-                            <button class="mx-2 border-white border py-2 px-3 rounded-lg">Sign in</button>
+                           <RouterLink to="/register" ><button class="mx-2 border-white border py-2 px-3 rounded-lg">Register</button></RouterLink> 
+                           <RouterLink to="/login" ><button class="mx-2 border-white border py-2 px-3 rounded-lg">Sign in</button></RouterLink>
                         </div>
                         <dropdown class="sm:block hidden"></dropdown>
-                        
-                            
                         
                     </div>
                     
