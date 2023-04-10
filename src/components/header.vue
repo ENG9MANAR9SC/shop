@@ -27,15 +27,15 @@
                     </div>
 
                     <!-- list Desktop & mobile -->
-                    <nav class="flex items-center justify-between flex-wrap p-6" >
-                        <div class="block lg:hidden" >
-                            <button class="flex items-center px-3 py-2 border rounded text-secondery border-white hover:text-gray-200 hover:border-gray-200" @click="toggleMenu">
+                    <nav class="flex items-start justify-start flex-wrap p-6" >
+                        <div class="block lg:hidden " >
+                            <button class="flex items-start px-3 py-2 border rounded   text-secondery border-white hover:text-gray-200 hover:border-gray-200" @click="toggleMenu">
                                 <i class="fas fa-bars" ></i>
                                 <img src="/icons/menu.png" alt="" class="h-5 w-5" >
                             </button>
                         </div>
-                        <div :class="{ 'hidden': !showMenu }" class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-                            <div class="text-lg lg:flex-grow">
+                        <div :class="{ 'hidden': !showMenu }" class="w-full block  z-10 flex-grow lg:flex lg:items-center lg:w-auto">
+                            <div class="text-lg lg:flex-grow ">
                                 <RouterLink  class="block mt-4 lg:inline-block lg:mt-0 text-secondery mx-2 p-2 hov-menu" to="/">{{ $t('Home') }}  </RouterLink>
                                 <RouterLink class="block mt-4 lg:inline-block lg:mt-0 text-secondery hover:text-gray-200 mx-2 p-2 hov-menu" to="/product"> {{ $t('Shop') }} </RouterLink>
                                 <RouterLink class="block mt-4 lg:inline-block lg:mt-0 text-secondery mx-2 p-2 hov-menu" to="/Categories">{{ $t('Categories') }} </RouterLink>
